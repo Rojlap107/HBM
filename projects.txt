@@ -1,0 +1,80 @@
+Festival Condo
+Location: 195 Commerce Street
+Services:
+- High-rise Window Cleaning
+- Button Installation
+- Post-construction Cleaning
+---------------------------------------------
+Ten York Condo
+Location: 10 York Street
+Services:
+- High-rise Window Cleaning
+---------------------------------------------
+Karma Condo
+Location: 15 Grenville Street
+Services:
+- High-rise Window Cleaning
+---------------------------------------------
+LNX Condo
+Location: 2388 Dundas Street West
+Services:
+- High-rise Window Cleaning
+- Glass Repair
+---------------------------------------------
+Thompson Centre
+Location: 100W Randolph St, Chicago, Illinois
+Services:
+- Anchor Testing
+---------------------------------------------
+Co-Star HQ
+Location: 470 Tredegar Street Richmond, Virginia, USA
+Services:
+- Anchor Testing
+---------------------------------------------
+ME Living
+Location: 30 Meadow Glen Pl
+Services:
+- Post-construction Cleaning
+- High-rise Window Cleaning
+---------------------------------------------
+Artistry Condo
+Location: 280 Dundas Street West, Toronto
+Services:
+- Button Installation
+- Post-construction Cleaning
+---------------------------------------------
+Central Condo
+Location: 38 Widmer
+Services:
+- High-rise Window Cleaning
+- Glass Repair
+---------------------------------------------
+346 Davenport
+Location: 346 Davenport Road, Toronto
+Services:
+- Glass Repair
+---------------------------------------------
+Brightwater Building D
+Location: 15 Mississauga Rd, Mississauga
+Services:
+- Post-construction Cleaning
+- High-rise Window Cleaning
+---------------------------------------------
+Gallery Square
+Location: 8112 Birchmount Rd, Markham
+Services:
+- Post-construction Cleaning
+- High-rise Window Cleaning
+---------------------------------------------
+Sugar Wharf Condo
+Location: 55 Lakeshore Blvd East
+Services:
+- High-rise Window Cleaning
+- Post-construction Cleaning
+---------------------------------------------
+The Garden District
+Location: 81 Shuter Street
+Services:
+- Post-construction Cleaning
+- High-rise Window Cleaning
+---------------------------------------------
