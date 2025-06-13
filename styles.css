@@ -10,6 +10,11 @@ body {
     line-height: 1.4;
     color: #333;
     overflow-x: hidden;
+    background-image: url('images/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -227,7 +232,7 @@ body {
 }
 
 .navbar-solid {
-    background-color: white !important;
+    background-color: (255, 255, 255, 0) !important;
 }
 
 .navbar-solid .nav-menu a, 
@@ -389,7 +394,7 @@ h3 {
 
 /* About Section */
 .about {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .about-summary {
@@ -426,7 +431,7 @@ h3 {
 
 /* Services Section */
 .services {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .services-grid {
@@ -497,7 +502,7 @@ h3 {
 
 /* Projects Section */
 .projects {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .projects-grid {
@@ -654,7 +659,7 @@ h3 {
 
 /* Associations Section */
 .associations {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 60px 0;
 }
 
@@ -702,7 +707,7 @@ h3 {
 
 /* Contact Section */
 .contact {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .contact-content {
@@ -886,6 +891,143 @@ h3 {
     color: #092c6a !important;
 }
 
+/* Mobile Navigation */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    overflow-y: auto;
+}
+
+.mobile-nav.active {
+    display: block;
+}
+
+.mobile-nav-content {
+    background: white;
+    margin: 80px 20px 20px;
+    border-radius: 15px;
+    padding: 30px 0;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+}
+
+.mobile-nav-item {
+    border-bottom: 1px solid #eee;
+}
+
+.mobile-nav-item:last-child {
+    border-bottom: none;
+}
+
+.mobile-nav-link {
+    display: block;
+    padding: 15px 25px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-nav-link:hover {
+    background-color: rgba(9, 44, 106, 0.1);
+    color: #092c6a;
+}
+
+.mobile-dropdown {
+    position: relative;
+}
+
+.mobile-dropdown-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-dropdown-trigger:hover {
+    background-color: rgba(9, 44, 106, 0.1);
+    color: #092c6a;
+}
+
+.mobile-dropdown-arrow {
+    transition: transform 0.3s ease;
+}
+
+.mobile-dropdown.active .mobile-dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.mobile-dropdown-content {
+    display: none;
+    background: #f8f9fa;
+    padding: 10px 0;
+}
+
+.mobile-dropdown.active .mobile-dropdown-content {
+    display: block;
+}
+
+.mobile-category {
+    margin-bottom: 15px;
+}
+
+.mobile-category:last-child {
+    margin-bottom: 0;
+}
+
+.mobile-category-title {
+    padding: 10px 40px;
+    font-weight: 600;
+    color: #092c6a;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.mobile-category-item {
+    display: block;
+    padding: 8px 40px;
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.mobile-category-item:hover {
+    background-color: rgba(9, 44, 106, 0.1);
+    color: #092c6a;
+    padding-left: 45px;
+}
+
+.mobile-nav-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-nav-close:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .mobile-menu-toggle {
@@ -983,7 +1125,7 @@ h3 {
 
 .services-categories {
     padding: 80px 0;
-    background: white;
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .service-category-box {
@@ -1080,13 +1222,13 @@ h3 {
 
 /* Individual Service Page Styles */
 .service-hero {
-    background: #34495e;
+    background: rgba(255, 255, 255, 0.6);
     padding: 120px 0 40px;
     margin-top: 0px;
 }
 
 .service-hero-content {
-    color: white;
+    color: #092c6a;
 }
 
 .breadcrumb {
@@ -1101,7 +1243,7 @@ h3 {
 }
 
 .breadcrumb span {
-    color: white;
+    color: black;
 }
 
 .service-hero h1 {
@@ -1116,7 +1258,7 @@ h3 {
 
 .service-details {
     padding: 0 0 40px 0;
-    background: white;
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .service-content {
@@ -1130,7 +1272,7 @@ h3 {
 
 .service-image img {
     width: 100%;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     border-radius: 15px;
     box-shadow: none;
@@ -1187,7 +1329,7 @@ h3 {
 
 .related-services {
     padding: 60px 0;
-    background: white;
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .related-services h2 {
@@ -1326,7 +1468,7 @@ h3 {
 /* About Page Styles */
 .company-overview {
     padding: 0px 0;
-    background: white;
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .overview-content {
@@ -1358,7 +1500,7 @@ h3 {
 
 .why-choose-us {
     padding: 20px 0;
-    background: white;
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .why-choose-us h2 {
@@ -1401,7 +1543,7 @@ h3 {
 
 .our-values {
     padding: 80px 0;
-    background: white;
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .our-values h2 {
@@ -1505,7 +1647,7 @@ h3 {
 /* Projects Page Styles */
 .projects-overview {
     padding: 20px 0;
-    background: white;
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .projects-overview h2 {
@@ -1547,7 +1689,7 @@ h3 {
 
 .projects-gallery {
     padding: 10px 0;
-    background: white;
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .project-filters {
@@ -1644,7 +1786,7 @@ h3 {
 
 .project-process {
     padding: 80px 0;
-    background: white;
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .project-process h2 {
@@ -1707,7 +1849,7 @@ h3 {
 /* Contact Page Styles */
 .contact-info-section {
     padding: 0px 0;
-    background: white;
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .contact-intro {
@@ -1908,7 +2050,7 @@ h3 {
 
 .service-areas {
     padding: 80px 0;
-    background: white;
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .service-areas h2 {
