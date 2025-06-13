@@ -540,30 +540,34 @@ function addLoadingState(button) {
     }, 2000);
 }
 
-// Typing effect for hero title
+// Hero title with typing animation for H2 only
 function initTypingEffect() {
     const typingElement = document.getElementById('typing-text');
     if (!typingElement) return;
     
-    const text = 'Precision Maintenance for Every Level – From Ground to Sky';
-    let index = 0;
+    const h1Text = 'Precision Maintenance for Every Level';
+    const h2Text = 'From Ground to Sky';
+    let h2Index = 0;
     
-    function typeText() {
-        if (index < text.length) {
-            typingElement.innerHTML = text.substring(0, index + 1) + '<span class="cursor">|</span>';
-            index++;
-            setTimeout(typeText, 50); // 50ms delay between characters
+    // Display H1 immediately
+    typingElement.innerHTML = `<h1 class="hero-h1">${h1Text}</h1><h2 class="hero-h2"><span class="cursor">|</span></h2>`;
+    
+    function typeH2() {
+        if (h2Index < h2Text.length) {
+            typingElement.innerHTML = `<h1 class="hero-h1">${h1Text}</h1><h2 class="hero-h2">${h2Text.substring(0, h2Index + 1)}<span class="cursor">|</span></h2>`;
+            h2Index++;
+            setTimeout(typeH2, 80); // 80ms delay between characters for H2
         } else {
             // Remove cursor after typing is complete
             setTimeout(() => {
-                typingElement.innerHTML = text; // Remove cursor span
+                typingElement.innerHTML = `<h1 class="hero-h1">${h1Text}</h1><h2 class="hero-h2">${h2Text}</h2>`;
                 typingElement.classList.add('typing-complete');
             }, 1000);
         }
     }
     
-    // Start typing effect after a small delay
-    setTimeout(typeText, 500);
+    // Start typing H2 after a delay
+    setTimeout(typeH2, 800);
 }
 
 // Main initialization function

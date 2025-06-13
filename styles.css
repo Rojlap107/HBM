@@ -1,3 +1,6 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -132,13 +135,13 @@ body {
 .mobile-menu-toggle span {
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #eb0509;
     margin: 3px 0;
     transition: 0.3s;
 }
 
 .navbar-solid .mobile-menu-toggle span {
-    background-color: #333;
+    background-color: #eb0509;
 }
 
 /* Dropdown Styles */
@@ -300,8 +303,13 @@ body {
         padding-right: 20px;
     }
     
-    .hero h1 {
-        font-size: 2.5rem;
+    .hero h1, .hero-h1 {
+        font-size: 4 rem;
+        text-align: left;
+    }
+    
+    .hero-h2 {
+        font-size: 1.8rem;
         text-align: left;
     }
     
@@ -310,7 +318,7 @@ body {
     }
     
     .service-image img {
-        height: 250px;
+        height: 300px;
     }
     
     .benefits-grid {
@@ -319,14 +327,30 @@ body {
     }
 }
 
-.hero h1 {
-    font-size: 4rem;
+.hero h1, .hero-h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 4.5rem;
     font-weight: 700;
     color: white;
+    text-align: left;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.hero-h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
     text-align: left;
     margin-bottom: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     max-width: 800px;
+    text-transform: none;
+    line-height: 1.2;
 }
 
 .hero-title {
@@ -788,8 +812,8 @@ h3 {
 
 /* Footer */
 .footer {
-    background-color: #092c6a;
-    color: white;
+    background-color: #d6d6d6;
+    color: #061d47;
     padding: 50px 0 20px;
 }
 
@@ -808,7 +832,7 @@ h3 {
 
 .footer-section h4 {
     margin-bottom: 20px;
-    color: white;
+    color: #061d47;
 }
 
 .footer-section ul {
@@ -820,20 +844,20 @@ h3 {
 }
 
 .footer-section ul li a {
-    color: #e8e8e8;
+    color: #092c6a;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-    color: white;
+    color: #eb0509;
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
     border-top: 1px solid #34495e;
-    color: #e8e8e8;
+    color: #092c6a;
 }
 
 .social-links {
@@ -866,7 +890,7 @@ h3 {
 }
 
 .social-icon:hover {
-    background-color: #092c6a;
+    background-color: #eb0509;
     transform: translateY(-2px);
 }
 
@@ -879,7 +903,7 @@ h3 {
 }
 
 .footer .social-links a {
-    color: white !important;
+    color: #092c6a !important;
 }
 
 .footer .social-icon {
@@ -1038,8 +1062,10 @@ h3 {
         display: none;
     }
     
-    .hero h1 {
-        font-size: 2.5rem;
+ 
+    
+    .hero-h2 {
+        font-size: 1.8rem;
         padding: 0 20px;
     }
     
@@ -1088,8 +1114,12 @@ h3 {
 }
 
 @media (max-width: 480px) {
-    .hero h1 {
+    .hero h1, .hero-h1 {
         font-size: 2rem;
+    }
+    
+    .hero-h2 {
+        font-size: 1.5rem;
     }
     
     h2 {
@@ -1223,7 +1253,7 @@ h3 {
 /* Individual Service Page Styles */
 .service-hero {
     background: rgba(255, 255, 255, 0.6);
-    padding: 120px 0 40px;
+    padding: 120px 0 0px;
     margin-top: 0px;
 }
 
@@ -1257,7 +1287,6 @@ h3 {
 }
 
 .service-details {
-    padding: 0 0 40px 0;
     background: rgba(255, 255, 255, 0.6);
 }
 
@@ -1300,7 +1329,8 @@ h3 {
 
 .service-benefits h3 {
     color: #2c3e50;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -1328,7 +1358,7 @@ h3 {
 }
 
 .related-services {
-    padding: 60px 0;
+    padding: 20px 0;
     background: rgba(255, 255, 255, 0.6);
 }
 
