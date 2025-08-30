@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Service | HBM Building Maintenance</title>
+    <meta name="description" id="pageDescription" content="Professional building maintenance services by HBM">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header-container">
+                <div class="header-contact">
+                    <span>Need Help? Call us: <a href="tel:+14162443904">+1 416 244-3904</a></span>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-solid">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="HBM Building Maintenance">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html#quote" class="cta-button">Get a Free Quote</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose">&times;</button>
+        <div class="mobile-nav-content">
+            <div class="mobile-nav-item">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+            </div>
+            <div class="mobile-nav-item">
+                <a href="about.html" class="mobile-nav-link">About Us</a>
+            </div>
+            <div class="mobile-nav-item mobile-dropdown">
+                <div class="mobile-dropdown-trigger">
+                    <span>Services</span>
+                    <span class="mobile-dropdown-arrow">▼</span>
+                </div>
+                <div class="mobile-dropdown-content" id="mobileServicesMenu">
+                    <!-- Services will be populated by JavaScript -->
+                </div>
+            </div>
+            <div class="mobile-nav-item">
+                <a href="projects.html" class="mobile-nav-link">Projects</a>
+            </div>
+            <div class="mobile-nav-item">
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
+            <div class="mobile-nav-item">
+                <a href="contact.html#quote" class="mobile-nav-link" style="background-color: #eb0509; color: white; margin: 10px 25px; border-radius: 25px; text-align: center;">Get a Free Quote</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Hero -->
+    <section class="service-hero">
+        <div class="service-hero-content">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> > 
+                    <a href="services.html">Services</a> > 
+                    <span id="serviceBreadcrumb">Service</span>
+                </div>
+                <h1 id="serviceTitle">Service Title</h1>
+                <p id="serviceDescription">Service description will be loaded here</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="service-details">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-image">
+                    <img id="serviceImage" src="" alt="Service Image">
+                </div>
+                
+                <div class="service-info">
+                    <div class="service-description">
+                        <h2 id="serviceMainTitle">Professional Service</h2>
+                        <p id="serviceFullDescription">Service description will be loaded here.</p>
+                        
+                        <h3>Our Services Include:</h3>
+                        <div id="servicesList">
+                            <!-- Services will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="service-benefits">
+                        <h3>Why Choose HBM?</h3>
+                        <div class="benefits-grid" id="benefitsGrid">
+                            <!-- Benefits will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section class="related-services">
+        <div class="container">
+            <h2>Related Services</h2>
+            <div class="related-grid" id="relatedServices">
+                <!-- Related services will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="service-cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 id="ctaTitle">Ready to get started?</h2>
+                <p id="ctaDescription">Contact HBM today to schedule our professional services.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-button">Get Free Quote</a>
+                    <a href="tel:+14162443904" class="cta-button-outline">Call +1 416 244-3904</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Associations Section -->
+    <section class="associations">
+        <div class="container">
+            <h2>Member of Reputable Canadian Associations</h2>
+            <div class="associations-logos">
+                <img src="images/associations-logos/acmo 2000.png" alt="ACMO 2000">
+                <img src="images/associations-logos/construct connect .png" alt="Construct Connect">
+                <img src="images/associations-logos/first service.png" alt="First Service">
+                <img src="images/associations-logos/homestars.png" alt="HomeStars">
+                <img src="images/associations-logos/merx logo.png" alt="Merx">
+                <img src="images/associations-logos/vendorpm.png" alt="VendorPM">
+                <img src="images/associations-logos/wsib.png" alt="WSIB">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/logo.png" alt="HBM Building Maintenance" class="footer-logo">
+                    <p>HBM Building Maintenance has been delivering reliable maintenance services across the GTA since 2015.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Installation & Repair</h4>
+                    <ul id="footerInstallation">
+                        <!-- Will be populated by JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Cleaning Services</h4>
+                    <ul id="footerCleaning">
+                        <!-- Will be populated by JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Glass & Other Services</h4>
+                    <ul id="footerOther">
+                        <!-- Will be populated by JavaScript -->
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 HBM Building Maintenance. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="service_data.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get service ID from URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const serviceId = urlParams.get('service');
+            
+            if (!serviceId || !serviceData[serviceId]) {
+                // Redirect to services page if service not found
+                window.location.href = 'services.html';
+                return;
+            }
+            
+            const service = serviceData[serviceId];
+            
+            // Update page title and meta
+            document.getElementById('pageTitle').textContent = `${service.title} | HBM Building Maintenance`;
+            document.getElementById('pageDescription').setAttribute('content', service.description);
+            
+            // Update breadcrumb and hero section
+            document.getElementById('serviceBreadcrumb').textContent = service.shortTitle;
+            document.getElementById('serviceTitle').textContent = service.title;
+            document.getElementById('serviceDescription').textContent = service.description;
+            
+            // Update service details
+            document.getElementById('serviceImage').src = service.heroImage;
+            document.getElementById('serviceImage').alt = service.title;
+            document.getElementById('serviceMainTitle').textContent = `Professional ${service.shortTitle}`;
+            document.getElementById('serviceFullDescription').textContent = service.fullDescription;
+            
+            // Populate services list
+            const servicesList = document.getElementById('servicesList');
+            service.services.forEach(item => {
+                const serviceItem = document.createElement('p');
+                serviceItem.innerHTML = `<strong>${item.title}:</strong> ${item.description}`;
+                servicesList.appendChild(serviceItem);
+            });
+            
+            // Populate benefits
+            const benefitsGrid = document.getElementById('benefitsGrid');
+            service.benefits.forEach(benefit => {
+                const benefitItem = document.createElement('div');
+                benefitItem.className = 'benefit-item';
+                benefitItem.innerHTML = `
+                    <h4>${benefit.title}</h4>
+                    <p>${benefit.description}</p>
+                `;
+                benefitsGrid.appendChild(benefitItem);
+            });
+            
+            // Populate related services
+            const relatedServices = document.getElementById('relatedServices');
+            service.relatedServices.forEach(relatedId => {
+                if (serviceData[relatedId]) {
+                    const relatedService = serviceData[relatedId];
+                    const relatedCard = document.createElement('a');
+                    relatedCard.href = `service.html?service=${relatedId}`;
+                    relatedCard.className = 'related-card';
+                    relatedCard.innerHTML = `
+                        <img src="${relatedService.heroImage}" alt="${relatedService.title}">
+                        <h3>${relatedService.shortTitle}</h3>
+                        <p>${relatedService.description}</p>
+                    `;
+                    relatedServices.appendChild(relatedCard);
+                }
+            });
+            
+            // Update CTA section
+            document.getElementById('ctaTitle').textContent = service.ctaTitle;
+            document.getElementById('ctaDescription').textContent = service.ctaDescription;
+            
+            // Populate mobile navigation services
+            const mobileServicesMenu = document.getElementById('mobileServicesMenu');
+            Object.entries(serviceCategories).forEach(([category, services]) => {
+                const categoryDiv = document.createElement('div');
+                categoryDiv.className = 'mobile-category';
+                categoryDiv.innerHTML = `<div class="mobile-category-title">${category}</div>`;
+                
+                services.forEach(serviceId => {
+                    if (serviceData[serviceId]) {
+                        const serviceLink = document.createElement('a');
+                        serviceLink.href = `service.html?service=${serviceId}`;
+                        serviceLink.className = 'mobile-category-item';
+                        serviceLink.textContent = serviceData[serviceId].shortTitle;
+                        categoryDiv.appendChild(serviceLink);
+                    }
+                });
+                
+                mobileServicesMenu.appendChild(categoryDiv);
+            });
+            
+            // Populate footer services
+            const footerInstallation = document.getElementById('footerInstallation');
+            const footerCleaning = document.getElementById('footerCleaning');
+            const footerOther = document.getElementById('footerOther');
+            
+            serviceCategories['Installation & Repair'].forEach(serviceId => {
+                if (serviceData[serviceId]) {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = `service.html?service=${serviceId}`;
+                    a.textContent = serviceData[serviceId].shortTitle;
+                    li.appendChild(a);
+                    footerInstallation.appendChild(li);
+                }
+            });
+            
+            serviceCategories['Cleaning Services'].forEach(serviceId => {
+                if (serviceData[serviceId]) {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = `service.html?service=${serviceId}`;
+                    a.textContent = serviceData[serviceId].shortTitle;
+                    li.appendChild(a);
+                    footerCleaning.appendChild(li);
+                }
+            });
+            
+            // Combine other categories for footer
+            const otherCategories = ['Glass Services', 'Exterior & Groundwork', 'Training'];
+            otherCategories.forEach(category => {
+                if (serviceCategories[category]) {
+                    serviceCategories[category].forEach(serviceId => {
+                        if (serviceData[serviceId]) {
+                            const li = document.createElement('li');
+                            const a = document.createElement('a');
+                            a.href = `service.html?service=${serviceId}`;
+                            a.textContent = serviceData[serviceId].shortTitle;
+                            li.appendChild(a);
+                            footerOther.appendChild(li);
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
