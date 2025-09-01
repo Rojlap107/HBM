@@ -75,30 +75,10 @@ function initSmoothScrolling() {
 }
 
 
-// Form submission handler
+// Form submission handler - DISABLED (using FormSubmit.co instead)
 function initContactForm() {
-    const contactForm = document.querySelector('#quote');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(contactForm);
-            const formObject = {};
-            formData.forEach((value, key) => {
-                formObject[key] = value;
-            });
-            
-            // Show success message
-            showNotification('Message sent successfully! We\'ll get back to you within 24 hours.', 'success');
-            
-            // Reset form
-            contactForm.reset();
-            
-            // In a real implementation, you would send the data to your server
-            console.log('Form submitted:', formObject);
-        });
-    }
+    // Contact form is now handled by contact.html's own JavaScript
+    // This function is disabled to prevent conflicts with FormSubmit.co
 }
 
 // Notification system
@@ -570,6 +550,130 @@ function initTypingEffect() {
     setTimeout(typeH2, 800);
 }
 
+// Areas of Services cycling functionality
+function initAreasCycling() {
+    const locations = [
+        { name: 'Toronto', image: 'images/Service Location/Toronto.jpg' },
+        { name: 'Mississauga', image: 'images/Service Location/Missisauga.jpg' },
+        { name: 'Brampton', image: 'images/Service Location/Brampton.jpg' },
+        { name: 'Ottawa', image: 'images/Service Location/Ottawa.jpg' },
+        { name: 'Vancouver', image: 'images/Service Location/Vancouver.jpg' },
+        { name: 'Calgary', image: 'images/Service Location/Calgary.jpg' },
+        { name: 'Kitchener', image: 'images/Service Location/Kitchener.jpg' },
+        { name: 'Guelph', image: 'images/Service Location/Guelph .jpg' },
+        { name: 'Barrie', image: 'images/Service Location/Barrie.jpg' },
+        { name: 'Peterborough', image: 'images/Service Location/Peterborough.jpg' }
+    ];
+    
+    const areaCards = document.querySelectorAll('.area-card');
+    
+    if (areaCards.length === 0) return;
+    
+    let currentBatch = 0; // Track which batch of 4 we're showing
+    const totalBatches = Math.ceil(locations.length / 4); // 3 batches (10 locations / 4 cards)
+    
+    function updateAreaCard(cardIndex, locationIndex) {
+        const card = areaCards[cardIndex];
+        const location = locations[locationIndex];
+        
+        if (card && location) {
+            const img = card.querySelector('.area-image img');
+            const title = card.querySelector('.area-title');
+            
+            if (img && title) {
+                // Add fade effect
+                img.style.opacity = '0';
+                title.style.opacity = '0';
+                
+                setTimeout(() => {
+                    img.src = location.image;
+                    img.alt = `${location.name} Services`;
+                    title.textContent = location.name;
+                    
+                    // Fade back in
+                    img.style.opacity = '1';
+                    title.style.opacity = '1';
+                }, 300);
+            }
+        }
+    }
+    
+    function cycleAreas() {
+        // Move to next batch
+        currentBatch = (currentBatch + 1) % totalBatches;
+        
+        // Calculate which 4 locations to show for this batch
+        const startIndex = currentBatch * 4;
+        
+        // Update all 4 cards at once with new batch
+        for (let cardIndex = 0; cardIndex < 4; cardIndex++) {
+            const locationIndex = (startIndex + cardIndex) % locations.length;
+            updateAreaCard(cardIndex, locationIndex);
+        }
+    }
+    
+    // Add CSS for smooth transitions
+    const style = document.createElement('style');
+    style.textContent = `
+        .area-image img,
+        .area-title {
+            transition: opacity 0.3s ease;
+        }
+    `;
+    document.head.appendChild(style);
+    
+    // Start cycling every 3 seconds
+    setInterval(cycleAreas, 3000);
+}
+
+// Logo scrolling functionality
+function initLogoScrolling() {
+    const logoContainers = document.querySelectorAll('.associations-logos:not(.auto-scroll)');
+    
+    logoContainers.forEach(container => {
+        const logos = container.querySelectorAll('img');
+        if (logos.length === 0) return;
+        
+        // Clone logos for seamless loop
+        logos.forEach(logo => {
+            const clone = logo.cloneNode(true);
+            container.appendChild(clone);
+        });
+        
+        // Add CSS for scrolling animation
+        container.style.cssText = `
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-top: 40px;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: scroll-left 20s linear infinite;
+        `;
+        
+        // Add scrolling keyframes
+        if (!document.getElementById('logo-scroll-styles')) {
+            const style = document.createElement('style');
+            style.id = 'logo-scroll-styles';
+            style.textContent = `
+                @keyframes scroll-left {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(-50%);
+                    }
+                }
+                
+                .associations-logos:hover {
+                    animation-play-state: paused;
+                }
+            `;
+            document.head.appendChild(style);
+        }
+    });
+}
+
 // Main initialization function
 document.addEventListener('DOMContentLoaded', function() {
     initMobileMenu();
@@ -582,4 +686,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollToTop();
     initProjectFilters();
     initTypingEffect();
+    initAreasCycling();
+    initLogoScrolling();
 });

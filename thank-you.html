@@ -217,18 +217,60 @@
         </div>
     </section>
 
+    <!-- Clients Section -->
+    <section class="associations">
+        <div class="container">
+            <h2>Clients Who Trust Us</h2>
+            <div class="carousel-container">
+                <div class="associations-logos auto-scroll" id="clientsCarousel">
+                    <img src="images/Clients/ICC PROPERTY MANAGEMENEYT.png" alt="ICC Property Management" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/TORONTO.png" alt="Toronto" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/TRACTEL.png" alt="Tractel" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/birdconstruction.jpg" alt="Bird Construction" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/del property.jpeg" alt="Del Property" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/forest hill kipling .jpg" alt="Forest Hill Kipling" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/mattamy HOMES.jpeg" alt="Mattamy Homes" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/sky grid.png" alt="Sky Grid" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/york region .png" alt="York Region" loading="lazy" width="120" height="80">
+                    <!-- Duplicate for seamless loop -->
+                    <img src="images/Clients/ICC PROPERTY MANAGEMENEYT.png" alt="ICC Property Management" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/TORONTO.png" alt="Toronto" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/TRACTEL.png" alt="Tractel" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/birdconstruction.jpg" alt="Bird Construction" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/del property.jpeg" alt="Del Property" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/forest hill kipling .jpg" alt="Forest Hill Kipling" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/mattamy HOMES.jpeg" alt="Mattamy Homes" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/sky grid.png" alt="Sky Grid" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/york region .png" alt="York Region" loading="lazy" width="120" height="80">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Associations Section -->
     <section class="associations">
         <div class="container">
             <h2>Member of Reputable Canadian Associations</h2>
-            <div class="associations-logos">
-                <img src="images/associations-logos/acmo 2000.png" alt="ACMO 2000">
-                <img src="images/associations-logos/construct connect .png" alt="Construct Connect">
-                <img src="images/associations-logos/first service.png" alt="First Service">
-                <img src="images/associations-logos/homestars.png" alt="HomeStars">
-                <img src="images/associations-logos/merx logo.png" alt="Merx">
-                <img src="images/associations-logos/vendorpm.png" alt="VendorPM">
-                <img src="images/associations-logos/wsib.png" alt="WSIB">
+            <div class="carousel-container">
+                <div class="associations-logos auto-scroll" id="associationsCarousel">
+                    <img src="images/associations-logos/acmo.jpg" alt="ACMO" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/construct connect .png" alt="Construct Connect" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/firstservice residential.jpg" alt="FirstService Residential" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/HomeStars.jpg" alt="HomeStars" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/merx.jpg" alt="Merx" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/vendorpm.png" alt="VendorPM" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/vive.jpeg" alt="Vive" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/wsib.webp" alt="WSIB" loading="lazy" width="120" height="80">
+                    <!-- Duplicate for seamless loop -->
+                    <img src="images/associations-logos/acmo.jpg" alt="ACMO" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/construct connect .png" alt="Construct Connect" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/firstservice residential.jpg" alt="FirstService Residential" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/HomeStars.jpg" alt="HomeStars" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/merx.jpg" alt="Merx" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/vendorpm.png" alt="VendorPM" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/vive.jpeg" alt="Vive" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/wsib.webp" alt="WSIB" loading="lazy" width="120" height="80">
+                </div>
             </div>
         </div>
     </section>
@@ -476,6 +518,60 @@
             .action-buttons a {
                 width: 200px;
                 text-align: center;
+            }
+        }
+        
+        /* Auto-scrolling Carousel Styles */
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+        
+        .associations-logos.auto-scroll {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            width: max-content;
+            animation: scroll-left 30s linear infinite;
+        }
+        
+        .associations-logos img {
+            flex-shrink: 0;
+            object-fit: contain;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Pause animation on hover */
+        .associations-logos.auto-scroll:hover {
+            animation-play-state: paused;
+        }
+        
+        /* Seamless scrolling animation */
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            /* Mobile auto-scroll adjustments */
+            .associations-logos.auto-scroll {
+                animation-duration: 20s; /* Faster on mobile */
+            }
+            
+            .associations-logos img {
+                width: 100px;
+                height: 65px;
             }
         }
     </style>

@@ -6,7 +6,9 @@ const serviceData = {
         category: 'Cleaning Services',
         shortTitle: 'Window Cleaning',
         description: 'Expert window cleaning services for buildings of all heights with safety focus',
-        heroImage: 'images/services/Cleaning Services/High Rise and Low-Rise Window Cleaning Services/27.png',
+        heroImage: 'images/services/Cleaning Services/High Rise and Low-Rise Window Cleaning Services/28.jpg',
+        imageTop: 'images/services/Cleaning Services/High Rise and Low-Rise Window Cleaning Services/28.jpg',
+        imageBottom: 'images/services/Cleaning Services/High Rise and Low-Rise Window Cleaning Services/25.jpg',
         fullDescription: 'At HBM, we specialize in expert window cleaning services for both high rise and low-rise buildings. Whether you\'re managing a residential, commercial, or mixed-use property, we provide comprehensive solutions to keep your windows looking pristine and clear.',
         services: [
             {
@@ -43,8 +45,10 @@ const serviceData = {
         category: 'Cleaning Services',
         shortTitle: 'Post-Construction',
         description: 'Comprehensive post-construction cleanup services for residential and commercial properties',
-        heroImage: 'images/services/Cleaning Services/Post-Construction Cleaning Services/11.png',
-        fullDescription: 'HBM provides thorough post-construction cleaning services to prepare your newly constructed or renovated space for occupancy. Our experienced team handles all aspects of construction debris removal and detailed cleaning.',
+        heroImage: 'images/services/Cleaning Services/Post-Construction Cleaning Services/4.jpg',
+        imageTop: 'images/services/Cleaning Services/Post-Construction Cleaning Services/19.jpg',
+        imageBottom: 'images/services/Cleaning Services/Post-Construction Cleaning Services/1.jpg',
+        fullDescription: 'At HBM, we provide comprehensive post-construction cleaning services designed to transform your newly built or renovated space into a pristine, move-in ready environment. Whether you\'re completing a residential renovation, commercial build-out, or large-scale construction project, we understand the unique challenges that come with post-construction cleanup and have the expertise to handle every detail with precision and care.',
         services: [
             {
                 title: 'Construction Debris Removal',
@@ -80,8 +84,10 @@ const serviceData = {
         category: 'Cleaning Services',
         shortTitle: 'Roof & Ceiling',
         description: 'Professional cleaning services for interior roofs and ceilings',
-        heroImage: 'images/services/Cleaning Services/Interior Roof and Ceiling Cleaning Services/20.png',
-        fullDescription: 'HBM offers specialized interior roof and ceiling cleaning services to maintain the cleanliness and appearance of overhead surfaces in commercial and residential properties.',
+        heroImage: 'images/services/Cleaning Services/Interior Roof and Ceiling Cleaning Services/9.jpg',
+        imageTop: 'images/services/Cleaning Services/Interior Roof and Ceiling Cleaning Services/9.jpg',
+        imageBottom: 'images/services/Cleaning Services/Interior Roof and Ceiling Cleaning Services/20.jpg',
+        fullDescription: 'At HBM, we specialize in professional interior roof and ceiling cleaning services that address the unique challenges of maintaining overhead surfaces in both commercial and residential properties. Whether you\'re dealing with suspended ceiling systems, exposed beams, or specialty ceiling materials, our experienced team uses advanced techniques and specialized equipment to ensure thorough cleaning while maintaining the integrity of your ceiling structures.',
         services: [
             {
                 title: 'Ceiling Cleaning',
@@ -117,8 +123,10 @@ const serviceData = {
         category: 'Cleaning Services',
         shortTitle: 'Solar Panel',
         description: 'Professional solar panel cleaning to maximize energy efficiency',
-        heroImage: 'images/services/Cleaning Services/Solar Panel Cleaning Services/13.png',
-        fullDescription: 'HBM provides specialized solar panel cleaning services to ensure your solar energy system operates at peak efficiency. Regular cleaning removes dirt, debris, and buildup that can reduce energy output.',
+        heroImage: 'images/services/Cleaning Services/Solar Panel Cleaning Services/13.jpg',
+        imageTop: 'images/services/Cleaning Services/Solar Panel Cleaning Services/14.jpg',
+        imageBottom: 'images/services/Cleaning Services/Solar Panel Cleaning Services/15.jpg',
+        fullDescription: 'At HBM, we understand that solar panels are a significant investment in your property\'s energy efficiency and environmental sustainability. Our specialized solar panel cleaning services are designed to maximize your system\'s performance and return on investment. Whether you have residential rooftop installations or large commercial solar arrays, we provide comprehensive cleaning solutions that remove dirt, debris, bird droppings, and environmental buildup that can significantly reduce your panels\' energy output.',
         services: [
             {
                 title: 'Panel Cleaning',
@@ -154,8 +162,10 @@ const serviceData = {
         category: 'Cleaning Services',
         shortTitle: 'Pressure Washing',
         description: 'High-pressure cleaning for exterior surfaces and hard-to-clean areas',
-        heroImage: 'images/services/Cleaning Services/Pressure Power Washing Services/2.png',
-        fullDescription: 'HBM offers professional pressure washing services to clean exterior surfaces, remove stubborn stains, and restore the appearance of various building surfaces.',
+        heroImage: 'images/services/Cleaning Services/Pressure Power Washing Services/2.jpg',
+        imageTop: 'images/services/Cleaning Services/Pressure Power Washing Services/3.jpg',
+        imageBottom: 'images/services/Cleaning Services/Pressure Power Washing Services/2.jpg',
+        fullDescription: 'At HBM, we provide powerful and effective pressure washing services that restore the original beauty and cleanliness of your property\'s exterior surfaces. Whether you\'re dealing with years of accumulated dirt, stubborn oil stains, graffiti, or weather-related discoloration, our professional pressure washing solutions deliver outstanding results. We work with residential, commercial, and industrial properties throughout the GTA, using state-of-the-art equipment and environmentally responsible cleaning methods.',
         services: [
             {
                 title: 'Exterior Surface Cleaning',
@@ -188,34 +198,33 @@ const serviceData = {
     // Installation & Repair Services
     'window-installation': {
         id: 'window-installation',
-        title: 'Window Installation Services',
+        title: 'Professional Window Installation',
         category: 'Installation & Repair',
         shortTitle: 'Window Installation',
         description: 'Professional window installation services for residential and commercial properties',
-        heroImage: 'images/services/Installation & Repair/Window Installation Services/23.png',
-        fullDescription: 'HBM provides expert window installation services for both residential and commercial properties. Our experienced technicians ensure proper installation for energy efficiency and long-lasting performance.',
-        services: [
-            {
-                title: 'Residential Windows',
-                description: 'Professional installation of residential windows including single-hung, double-hung, casement, and specialty windows.'
-            },
-            {
-                title: 'Commercial Windows',
-                description: 'Expert installation of commercial-grade windows for office buildings and commercial properties.'
-            }
-        ],
+        heroImage: 'images/services/Installation & Repair/Window Installation Services/23.jpg',
+        imageTop: 'images/services/Installation & Repair/Window Installation Services/24.jpg',
+        imageBottom: 'images/services/Installation & Repair/Window Installation Services/23.jpg',
+        intro: 'At HBM, we specialize in professional window installation for both residential and commercial properties. With over 8 years of experience, we provide top-quality installation that enhances both the appearance and energy efficiency of your space.',
+        process: 'Our process begins with a personalized consultation where our team assesses your needs and recommends the best window styles, materials, and energy-efficient options. Whether you\'re upgrading existing windows, replacing outdated ones, or installing new windows in a renovation or new build, we ensure a seamless experience from start to finish.',
+        quality: 'Our installation team uses the latest techniques and high-quality materials to guarantee a precise, secure fit. We take care to minimize disruption to your space while ensuring your windows are installed to the highest standards for performance and longevity.',
+        support: 'After installation, we provide ongoing support to ensure your windows continue to perform at their best, including maintenance and repairs as needed.',
         benefits: [
             {
-                title: 'Energy Efficiency',
-                description: 'Proper installation ensures maximum energy efficiency and reduced heating/cooling costs.'
-            },
-            {
-                title: 'Professional Installation',
-                description: 'Our certified technicians ensure windows are installed correctly the first time.'
+                title: 'Expert Guidance',
+                description: 'We help you choose the right window solutions for your needs and budget.'
             },
             {
                 title: 'Quality Materials',
-                description: 'We work with high-quality window manufacturers to ensure lasting performance.'
+                description: 'We use only high-quality windows from trusted manufacturers, ensuring durability and energy efficiency.'
+            },
+            {
+                title: 'Precision Installation',
+                description: 'Our skilled team ensures every window is installed with care and accuracy.'
+            },
+            {
+                title: 'Customer Satisfaction',
+                description: 'We focus on delivering a hassle-free experience with outstanding results.'
             }
         ],
         ctaTitle: 'Ready for new windows?',
@@ -229,8 +238,10 @@ const serviceData = {
         category: 'Installation & Repair',
         shortTitle: 'ISA Button Installation',
         description: 'Professional ISA button installation and anchor testing for building safety',
-        heroImage: 'images/services/Installation & Repair/ISA Button Installation and Anchor Testing Services/10.png',
-        fullDescription: 'HBM provides expert ISA button installation and anchor testing services to ensure building safety compliance and proper anchor point installation for rope access work.',
+        heroImage: 'images/services/Installation & Repair/ISA Button Installation and Anchor Testing Services/10.jpg',
+        imageTop: 'images/services/Installation & Repair/ISA Button Installation and Anchor Testing Services/9.jpg',
+        imageBottom: 'images/services/Installation & Repair/ISA Button Installation and Anchor Testing Services/15.jpg',
+        fullDescription: 'At HBM, we specialize in professional ISA button installation and comprehensive anchor testing services that ensure your building meets the highest safety standards for rope access work and maintenance operations. Whether you\'re managing a commercial high-rise, residential complex, or industrial facility, our certified technicians provide expert installation and testing services that comply with all relevant safety codes and regulations, giving you confidence in your building\'s anchor point systems.',
         services: [
             {
                 title: 'ISA Button Installation',
@@ -266,8 +277,10 @@ const serviceData = {
         category: 'Installation & Repair',
         shortTitle: 'Painting & Drywall',
         description: 'Professional painting and drywall repair for interior and exterior surfaces',
-        heroImage: 'images/services/Installation & Repair/Painting and Drywall Repair Services/5.png',
-        fullDescription: 'HBM offers comprehensive painting and drywall repair services to maintain and improve the appearance of your property\'s interior and exterior surfaces.',
+        heroImage: 'images/services/Installation & Repair/Painting and Drywall Repair Services/5.jpg',
+        imageTop: 'images/services/Installation & Repair/Painting and Drywall Repair Services/6.jpg',
+        imageBottom: 'images/services/Installation & Repair/Painting and Drywall Repair Services/7.jpg',
+        fullDescription: 'At HBM, we provide comprehensive painting and drywall repair services that transform and revitalize your property\'s interior and exterior spaces. Whether you\'re refreshing a single room, completing a full property makeover, or addressing damage from wear and tear, our skilled craftsmen deliver professional results that enhance both the beauty and value of your space. We work with residential homeowners, commercial property managers, and industrial facilities throughout the GTA.',
         services: [
             {
                 title: 'Interior Painting',
@@ -303,8 +316,10 @@ const serviceData = {
         category: 'Installation & Repair',
         shortTitle: 'Flooring Services',
         description: 'Professional flooring installation and repair for all types of flooring materials',
-        heroImage: 'images/services/Installation & Repair/Flooring Installation and Repair Services/30.png',
-        fullDescription: 'HBM provides expert flooring installation and repair services for residential and commercial properties, working with various flooring materials to meet your needs.',
+        heroImage: 'images/services/Installation & Repair/Flooring Installation and Repair Services/30.jpg',
+        imageTop: 'images/services/Installation & Repair/Flooring Installation and Repair Services/31.jpg',
+        imageBottom: 'images/services/Installation & Repair/Flooring Installation and Repair Services/32.jpg',
+        fullDescription: 'At HBM, we offer expert flooring installation and repair services that enhance the functionality, durability, and aesthetic appeal of your residential or commercial space. Whether you\'re installing new flooring in a custom home, updating a commercial office space, or repairing damaged floors in an industrial facility, our experienced team works with all major flooring materials and installation methods to deliver results that meet your specific needs, budget, and timeline.',
         services: [
             {
                 title: 'Flooring Installation',
@@ -340,8 +355,10 @@ const serviceData = {
         category: 'Installation & Repair',
         shortTitle: 'Bollard Installation',
         description: 'Professional bollard installation for property protection and traffic control',
-        heroImage: 'images/services/Installation & Repair/Bollard Installation Services/21.png',
-        fullDescription: 'HBM provides professional bollard installation services to protect property, control traffic flow, and enhance security for commercial and residential properties.',
+        heroImage: 'images/services/Installation & Repair/Bollard Installation Services/22.jpg',
+        imageTop: 'images/services/Installation & Repair/Bollard Installation Services/22.jpg',
+        imageBottom: 'images/services/Installation & Repair/Bollard Installation Services/21.jpg',
+        fullDescription: 'At HBM, we specialize in professional bollard installation services designed to protect your property, enhance security, and manage traffic flow effectively. Whether you need to safeguard pedestrian areas from vehicle intrusion, delineate parking zones, or create secure perimeters around sensitive areas, our experienced team provides custom bollard solutions for commercial properties, residential complexes, and industrial facilities throughout the GTA.',
         services: [
             {
                 title: 'Security Bollards',
@@ -377,8 +394,10 @@ const serviceData = {
         category: 'Installation & Repair',
         shortTitle: 'Brickwork Repair',
         description: 'Expert brickwork repair and restoration for building exteriors',
-        heroImage: 'images/services/Installation & Repair/Brickwork Repair Services/24.png',
-        fullDescription: 'HBM offers professional brickwork repair and restoration services to maintain the structural integrity and appearance of brick buildings and facades.',
+        heroImage: 'images/services/Installation & Repair/Brickwork Repair Services/24.jpg',
+        imageTop: 'images/services/Installation & Repair/Brickwork Repair Services/25.jpg',
+        imageBottom: 'images/services/Installation & Repair/Brickwork Repair Services/26.jpg',
+        fullDescription: 'At HBM, we provide expert brickwork repair and restoration services that preserve the structural integrity, weather resistance, and timeless beauty of brick buildings and facades. Whether you\'re dealing with minor mortar deterioration, significant structural damage, or comprehensive facade restoration, our skilled masons combine traditional craftsmanship with modern techniques to deliver lasting results that protect your investment and maintain your property\'s architectural character.',
         services: [
             {
                 title: 'Brick Repair',
@@ -415,8 +434,10 @@ const serviceData = {
         category: 'Glass Services',
         shortTitle: 'Glass Repair',
         description: 'Professional glass scratch repair to restore clarity and appearance',
-        heroImage: 'images/services/Glass Services/Glass Scratch Repair Service/18.png',
-        fullDescription: 'HBM specializes in professional glass scratch repair services to restore scratched glass to its original clarity and appearance without the need for costly replacement.',
+        heroImage: 'images/services/Glass Services/Glass Scratch Repair Service/18.jpg',
+        imageTop: 'images/services/Glass Services/Glass Scratch Repair Service/18.jpg',
+        imageBottom: 'images/services/Glass Services/Glass Scratch Repair Service/19.jpg',
+        fullDescription: 'At HBM, we specialize in advanced glass scratch repair services that restore damaged glass surfaces to their original crystal-clear condition without the expense and disruption of complete replacement. Whether you\'re dealing with scratches on storefront windows, residential glass doors, or specialty glass installations, our skilled technicians use state-of-the-art equipment and proven techniques to eliminate scratches, restore optical clarity, and extend the life of your glass investments.',
         services: [
             {
                 title: 'Scratch Removal',
@@ -452,8 +473,10 @@ const serviceData = {
         category: 'Glass Services',
         shortTitle: 'Caulking & Glazing',
         description: 'Professional sealing and glazing services for windows and building joints',
-        heroImage: 'images/services/Glass Services/Caulking and Glazing Services/11.png',
-        fullDescription: 'HBM provides expert caulking and glazing services to seal windows, joints, and other building openings, preventing water infiltration and improving energy efficiency.',
+        heroImage: 'images/services/Glass Services/Caulking and Glazing Services/10.jpg',
+        imageTop: 'images/services/Glass Services/Caulking and Glazing Services/10.jpg',
+        imageBottom: 'images/services/Glass Services/Caulking and Glazing Services/12.jpg',
+        fullDescription: 'At HBM, we provide professional caulking and glazing services that create effective seals around windows, doors, and building joints to prevent water infiltration, air leaks, and energy loss. Whether you\'re addressing maintenance issues in an existing building, completing new construction, or upgrading your property\'s energy efficiency, our experienced team uses high-quality materials and proven application techniques to deliver long-lasting seals that protect your building and reduce operating costs.',
         services: [
             {
                 title: 'Window Caulking',
@@ -490,8 +513,10 @@ const serviceData = {
         category: 'Exterior & Groundwork',
         shortTitle: 'Interlocking',
         description: 'Professional interlocking stone installation and repair for driveways and walkways',
-        heroImage: 'images/services/Exterior & Groundwork/Interlocking Services/38.png',
-        fullDescription: 'HBM offers professional interlocking stone services for driveways, walkways, and outdoor spaces, providing durable and attractive hardscaping solutions.',
+        heroImage: 'images/services/Exterior & Groundwork/Interlocking Services/38.jpg',
+        imageTop: 'images/services/Exterior & Groundwork/Interlocking Services/39.jpg',
+        imageBottom: 'images/services/Exterior & Groundwork/Interlocking Services/38.jpg',
+        fullDescription: 'At HBM, we specialize in professional interlocking stone installation and maintenance services that create beautiful, durable, and functional outdoor spaces. Whether you\'re designing a new driveway, creating elegant walkways, building a stunning patio, or enhancing your commercial property\'s exterior appeal, our experienced hardscaping team combines technical expertise with creative vision to deliver interlocking solutions that enhance your property\'s value and curb appeal while providing years of reliable performance.',
         services: [
             {
                 title: 'Interlocking Installation',
@@ -527,8 +552,10 @@ const serviceData = {
         category: 'Exterior & Groundwork',
         shortTitle: 'Parking Striping',
         description: 'Professional parking lot line striping and marking services',
-        heroImage: 'images/services/Exterior & Groundwork/Parking Line Striping Services/27.png',
-        fullDescription: 'HBM provides professional parking lot line striping and marking services to maintain clear, visible parking areas and ensure compliance with accessibility requirements.',
+        heroImage: 'images/services/Exterior & Groundwork/Parking Line Striping Services/27.jpg',
+        imageTop: 'images/services/Exterior & Groundwork/Parking Line Striping Services/28.jpg',
+        imageBottom: 'images/services/Exterior & Groundwork/Parking Line Striping Services/29.jpg',
+        fullDescription: 'At HBM, we provide comprehensive parking lot line striping and marking services that ensure safe, organized, and compliant parking areas for your commercial or residential property. Whether you\'re maintaining existing parking areas, creating new layouts, or updating markings to meet current accessibility standards, our experienced team uses high-quality paints and precise application techniques to deliver clear, durable markings that improve traffic flow, maximize parking capacity, and ensure compliance with local regulations.',
         services: [
             {
                 title: 'Line Striping',
@@ -564,8 +591,10 @@ const serviceData = {
         category: 'Exterior & Groundwork',
         shortTitle: 'Hoisting',
         description: 'Professional hoisting services for material transport and heavy lifting',
-        heroImage: 'images/services/Exterior & Groundwork/Hoisting Services/20.png',
-        fullDescription: 'HBM provides professional hoisting services for transporting materials and equipment to elevated areas safely and efficiently during construction and maintenance projects.',
+        heroImage: 'images/services/Exterior & Groundwork/Hoisting Services/20.jpg',
+        imageTop: 'images/services/Exterior & Groundwork/Hoisting Services/21.jpg',
+        imageBottom: 'images/services/Exterior & Groundwork/Hoisting Services/22.jpg',
+        fullDescription: 'At HBM, we provide safe and efficient hoisting services that facilitate the transport of materials, equipment, and personnel to elevated work areas during construction, renovation, and maintenance projects. Whether you\'re working on high-rise buildings, multi-story renovations, or complex industrial installations, our certified operators and state-of-the-art hoisting equipment ensure that materials reach their destination safely, efficiently, and on schedule, while maintaining the highest safety standards throughout the process.',
         services: [
             {
                 title: 'Material Hoisting',
@@ -601,8 +630,10 @@ const serviceData = {
         category: 'Exterior & Groundwork',
         shortTitle: 'Concrete Testing',
         description: 'Professional concrete testing and quality assurance services',
-        heroImage: 'images/services/Exterior & Groundwork/Concrete Testing Service/36.png',
-        fullDescription: 'HBM offers professional concrete testing services to ensure concrete quality, strength, and compliance with building codes and specifications.',
+        heroImage: 'images/services/Exterior & Groundwork/Concrete Testing Service/36.jpg',
+        imageTop: 'images/services/Exterior & Groundwork/Concrete Testing Service/37.jpg',
+        imageBottom: 'images/services/Exterior & Groundwork/Concrete Testing Service/36.jpg',
+        fullDescription: 'At HBM, we provide comprehensive concrete testing and quality assurance services that ensure your concrete installations meet or exceed project specifications, building codes, and industry standards. Whether you\'re overseeing new construction, infrastructure projects, or specialized concrete applications, our certified testing technicians use advanced equipment and proven methodologies to verify concrete strength, durability, and compliance, providing you with the documentation and confidence you need for successful project completion.',
         services: [
             {
                 title: 'Strength Testing',
@@ -639,8 +670,10 @@ const serviceData = {
         category: 'Training',
         shortTitle: 'Rope Access Training',
         description: 'Professional rope access training and certification programs',
-        heroImage: 'images/services/Training/Rope Access Training Services/16.png',
-        fullDescription: 'HBM provides comprehensive rope access training programs to certify technicians in safe rope access techniques for building maintenance and inspection work.',
+        heroImage: 'images/services/Training/Rope Access Training Services/16.jpg',
+        imageTop: 'images/services/Training/Rope Access Training Services/17.jpg',
+        imageBottom: 'images/services/Training/Rope Access Training Services/16.jpg',
+        fullDescription: 'At HBM, we provide comprehensive rope access training and certification programs that prepare technicians for safe and effective work in challenging elevated environments. Whether you are looking to advance your career in building maintenance, expand your skillset for industrial inspection work, or ensure your team meets the highest safety standards for rope access operations, our experienced instructors deliver hands-on training that combines theoretical knowledge with practical application in real-world scenarios.',
         services: [
             {
                 title: 'Level 1 Training',

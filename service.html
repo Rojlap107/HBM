@@ -76,47 +76,52 @@
         </div>
     </div>
 
-    <!-- Service Hero -->
-    <section class="service-hero">
-        <div class="service-hero-content">
+    <!-- Service Hero with Background Image -->
+    <section class="service-hero-new" id="serviceHero">
+        <div class="hero-overlay">
             <div class="container">
                 <div class="breadcrumb">
                     <a href="index.html">Home</a> > 
                     <a href="services.html">Services</a> > 
                     <span id="serviceBreadcrumb">Service</span>
                 </div>
-                <h1 id="serviceTitle">Service Title</h1>
-                <p id="serviceDescription">Service description will be loaded here</p>
+                <h1 id="serviceTitle">Professional Window Installation</h1>
             </div>
         </div>
     </section>
 
-    <!-- Service Details -->
-    <section class="service-details">
+    <!-- Service Content -->
+    <section class="service-content-new">
         <div class="container">
-            <div class="service-content">
-                <div class="service-image">
-                    <img id="serviceImage" src="" alt="Service Image">
+            <div class="service-layout">
+                <div class="service-text">
+                    <div class="service-description">
+                        <p id="serviceFullDescription"></p>
+                    </div>
+                    
+                    <div class="service-details" id="serviceDetails">
+                        <!-- Service specific details will be populated by JavaScript -->
+                    </div>
                 </div>
                 
-                <div class="service-info">
-                    <div class="service-description">
-                        <h2 id="serviceMainTitle">Professional Service</h2>
-                        <p id="serviceFullDescription">Service description will be loaded here.</p>
-                        
-                        <h3>Our Services Include:</h3>
-                        <div id="servicesList">
-                            <!-- Services will be populated by JavaScript -->
-                        </div>
+                <div class="service-images">
+                    <div class="service-image-top" id="serviceImageTop">
+                        <img src="" alt="Service Image 1">
                     </div>
-
-                    <div class="service-benefits">
-                        <h3>Why Choose HBM?</h3>
-                        <div class="benefits-grid" id="benefitsGrid">
-                            <!-- Benefits will be populated by JavaScript -->
-                        </div>
+                    <div class="service-image-bottom" id="serviceImageBottom">
+                        <img src="" alt="Service Image 2">
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose HBM Section -->
+    <section class="why-choose-hbm">
+        <div class="container">
+            <h2>Why Choose HBM?</h2>
+            <div class="benefits-grid-new" id="benefitsGridNew">
+                <!-- Benefits will be populated by JavaScript -->
             </div>
         </div>
     </section>
@@ -145,18 +150,60 @@
         </div>
     </section>
 
+    <!-- Clients Section -->
+    <section class="associations">
+        <div class="container">
+            <h2>Clients Who Trust Us</h2>
+            <div class="carousel-container">
+                <div class="associations-logos auto-scroll" id="clientsCarousel">
+                    <img src="images/Clients/ICC PROPERTY MANAGEMENEYT.png" alt="ICC Property Management" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/TORONTO.png" alt="Toronto" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/TRACTEL.png" alt="Tractel" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/birdconstruction.jpg" alt="Bird Construction" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/del property.jpeg" alt="Del Property" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/forest hill kipling .jpg" alt="Forest Hill Kipling" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/mattamy HOMES.jpeg" alt="Mattamy Homes" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/sky grid.png" alt="Sky Grid" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/york region .png" alt="York Region" loading="lazy" width="120" height="80">
+                    <!-- Duplicate for seamless loop -->
+                    <img src="images/Clients/ICC PROPERTY MANAGEMENEYT.png" alt="ICC Property Management" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/TORONTO.png" alt="Toronto" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/TRACTEL.png" alt="Tractel" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/birdconstruction.jpg" alt="Bird Construction" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/del property.jpeg" alt="Del Property" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/forest hill kipling .jpg" alt="Forest Hill Kipling" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/mattamy HOMES.jpeg" alt="Mattamy Homes" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/sky grid.png" alt="Sky Grid" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/york region .png" alt="York Region" loading="lazy" width="120" height="80">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Associations Section -->
     <section class="associations">
         <div class="container">
             <h2>Member of Reputable Canadian Associations</h2>
-            <div class="associations-logos">
-                <img src="images/associations-logos/acmo 2000.png" alt="ACMO 2000">
-                <img src="images/associations-logos/construct connect .png" alt="Construct Connect">
-                <img src="images/associations-logos/first service.png" alt="First Service">
-                <img src="images/associations-logos/homestars.png" alt="HomeStars">
-                <img src="images/associations-logos/merx logo.png" alt="Merx">
-                <img src="images/associations-logos/vendorpm.png" alt="VendorPM">
-                <img src="images/associations-logos/wsib.png" alt="WSIB">
+            <div class="carousel-container">
+                <div class="associations-logos auto-scroll" id="associationsCarousel">
+                    <img src="images/associations-logos/acmo.jpg" alt="ACMO" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/construct connect .png" alt="Construct Connect" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/firstservice residential.jpg" alt="FirstService Residential" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/HomeStars.jpg" alt="HomeStars" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/merx.jpg" alt="Merx" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/vendorpm.png" alt="VendorPM" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/vive.jpeg" alt="Vive" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/wsib.webp" alt="WSIB" loading="lazy" width="120" height="80">
+                    <!-- Duplicate for seamless loop -->
+                    <img src="images/associations-logos/acmo.jpg" alt="ACMO" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/construct connect .png" alt="Construct Connect" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/firstservice residential.jpg" alt="FirstService Residential" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/HomeStars.jpg" alt="HomeStars" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/merx.jpg" alt="Merx" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/vendorpm.png" alt="VendorPM" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/vive.jpeg" alt="Vive" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/wsib.webp" alt="WSIB" loading="lazy" width="120" height="80">
+                </div>
             </div>
         </div>
     </section>
@@ -213,17 +260,24 @@
     <script src="service_data.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded');
+            console.log('serviceData available:', typeof serviceData !== 'undefined');
+            console.log('serviceCategories available:', typeof serviceCategories !== 'undefined');
+            
             // Get service ID from URL parameter
             const urlParams = new URLSearchParams(window.location.search);
             const serviceId = urlParams.get('service');
+            console.log('Service ID from URL:', serviceId);
             
             if (!serviceId || !serviceData[serviceId]) {
+                console.error('Service not found:', serviceId);
                 // Redirect to services page if service not found
                 window.location.href = 'services.html';
                 return;
             }
             
             const service = serviceData[serviceId];
+            console.log('Service data loaded:', service);
             
             // Update page title and meta
             document.getElementById('pageTitle').textContent = `${service.title} | HBM Building Maintenance`;
@@ -232,120 +286,607 @@
             // Update breadcrumb and hero section
             document.getElementById('serviceBreadcrumb').textContent = service.shortTitle;
             document.getElementById('serviceTitle').textContent = service.title;
-            document.getElementById('serviceDescription').textContent = service.description;
             
-            // Update service details
-            document.getElementById('serviceImage').src = service.heroImage;
-            document.getElementById('serviceImage').alt = service.title;
-            document.getElementById('serviceMainTitle').textContent = `Professional ${service.shortTitle}`;
-            document.getElementById('serviceFullDescription').textContent = service.fullDescription;
+            // Set hero background image
+            const serviceHero = document.getElementById('serviceHero');
+            serviceHero.style.backgroundImage = `url('${service.heroImage}')`;
             
-            // Populate services list
-            const servicesList = document.getElementById('servicesList');
-            service.services.forEach(item => {
-                const serviceItem = document.createElement('p');
-                serviceItem.innerHTML = `<strong>${item.title}:</strong> ${item.description}`;
-                servicesList.appendChild(serviceItem);
-            });
+            // Update service content - use fullDescription from service_data.js
+            console.log('Setting fullDescription:', service.fullDescription);
+            const fullDescElement = document.getElementById('serviceFullDescription');
+            console.log('fullDescElement found:', fullDescElement !== null);
+            if (fullDescElement) {
+                fullDescElement.textContent = service.fullDescription;
+                console.log('fullDescription set successfully');
+            }
+            
+            // Populate service details if available
+            const serviceDetails = document.getElementById('serviceDetails');
+            if (service.services && service.services.length > 0) {
+                service.services.forEach(serviceItem => {
+                    const detailDiv = document.createElement('div');
+                    detailDiv.className = 'service-detail-item';
+                    detailDiv.innerHTML = `
+                        <h3>${serviceItem.title}</h3>
+                        <p>${serviceItem.description}</p>
+                    `;
+                    serviceDetails.appendChild(detailDiv);
+                });
+            }
+            
+            // Handle service with intro, process, quality, support (like window-installation)
+            if (service.intro || service.process || service.quality || service.support) {
+                if (service.intro) {
+                    const introDiv = document.createElement('div');
+                    introDiv.className = 'service-detail-item';
+                    introDiv.innerHTML = `<p>${service.intro}</p>`;
+                    serviceDetails.appendChild(introDiv);
+                }
+                if (service.process) {
+                    const processDiv = document.createElement('div');
+                    processDiv.className = 'service-detail-item';
+                    processDiv.innerHTML = `<p>${service.process}</p>`;
+                    serviceDetails.appendChild(processDiv);
+                }
+                if (service.quality) {
+                    const qualityDiv = document.createElement('div');
+                    qualityDiv.className = 'service-detail-item';
+                    qualityDiv.innerHTML = `<p>${service.quality}</p>`;
+                    serviceDetails.appendChild(qualityDiv);
+                }
+                if (service.support) {
+                    const supportDiv = document.createElement('div');
+                    supportDiv.className = 'service-detail-item';
+                    supportDiv.innerHTML = `<p>${service.support}</p>`;
+                    serviceDetails.appendChild(supportDiv);
+                }
+            }
+            
+            // Update service images
+            const topImage = document.querySelector('#serviceImageTop img');
+            const bottomImage = document.querySelector('#serviceImageBottom img');
+            const topContainer = document.getElementById('serviceImageTop');
+            const bottomContainer = document.getElementById('serviceImageBottom');
+            
+            if (service.imageTop && topImage) {
+                topImage.src = service.imageTop;
+                topImage.alt = service.title + ' - Image 1';
+                topContainer.style.display = 'block';
+            } else {
+                topContainer.style.display = 'none';
+            }
+            
+            if (service.imageBottom && bottomImage) {
+                bottomImage.src = service.imageBottom;
+                bottomImage.alt = service.title + ' - Image 2';
+                bottomContainer.style.display = 'block';
+            } else {
+                bottomContainer.style.display = 'none';
+            }
             
             // Populate benefits
-            const benefitsGrid = document.getElementById('benefitsGrid');
-            service.benefits.forEach(benefit => {
-                const benefitItem = document.createElement('div');
-                benefitItem.className = 'benefit-item';
-                benefitItem.innerHTML = `
-                    <h4>${benefit.title}</h4>
-                    <p>${benefit.description}</p>
-                `;
-                benefitsGrid.appendChild(benefitItem);
-            });
+            console.log('Setting up benefits...');
+            const benefitsGridNew = document.getElementById('benefitsGridNew');
+            console.log('Benefits grid element found:', benefitsGridNew !== null);
+            console.log('Service benefits:', service.benefits);
+            if (service.benefits && benefitsGridNew) {
+                console.log('Populating', service.benefits.length, 'benefits');
+                benefitsGridNew.innerHTML = ''; // Clear existing content
+                service.benefits.forEach((benefit, index) => {
+                    console.log(`Adding benefit ${index}:`, benefit.title);
+                    const benefitItem = document.createElement('div');
+                    benefitItem.className = 'benefit-item-new';
+                    benefitItem.innerHTML = `
+                        <h3>${benefit.title}</h3>
+                        <p>${benefit.description}</p>
+                    `;
+                    benefitsGridNew.appendChild(benefitItem);
+                });
+                console.log('Benefits populated successfully');
+            } else {
+                console.error('Benefits or benefits grid not found');
+            }
             
             // Populate related services
             const relatedServices = document.getElementById('relatedServices');
-            service.relatedServices.forEach(relatedId => {
-                if (serviceData[relatedId]) {
-                    const relatedService = serviceData[relatedId];
-                    const relatedCard = document.createElement('a');
-                    relatedCard.href = `service.html?service=${relatedId}`;
-                    relatedCard.className = 'related-card';
-                    relatedCard.innerHTML = `
-                        <img src="${relatedService.heroImage}" alt="${relatedService.title}">
-                        <h3>${relatedService.shortTitle}</h3>
-                        <p>${relatedService.description}</p>
-                    `;
-                    relatedServices.appendChild(relatedCard);
-                }
-            });
+            if (service.relatedServices && relatedServices) {
+                relatedServices.innerHTML = ''; // Clear existing content
+                service.relatedServices.forEach(relatedId => {
+                    if (serviceData[relatedId]) {
+                        const relatedService = serviceData[relatedId];
+                        const relatedCard = document.createElement('a');
+                        relatedCard.href = `service.html?service=${relatedId}`;
+                        relatedCard.className = 'related-card';
+                        relatedCard.innerHTML = `
+                            <img src="${relatedService.heroImage}" alt="${relatedService.title}">
+                            <h3>${relatedService.shortTitle}</h3>
+                            <p>${relatedService.description}</p>
+                        `;
+                        relatedServices.appendChild(relatedCard);
+                    }
+                });
+            }
             
             // Update CTA section
-            document.getElementById('ctaTitle').textContent = service.ctaTitle;
-            document.getElementById('ctaDescription').textContent = service.ctaDescription;
+            if (service.ctaTitle) {
+                document.getElementById('ctaTitle').textContent = service.ctaTitle;
+            }
+            if (service.ctaDescription) {
+                document.getElementById('ctaDescription').textContent = service.ctaDescription;
+            }
             
             // Populate mobile navigation services
             const mobileServicesMenu = document.getElementById('mobileServicesMenu');
-            Object.entries(serviceCategories).forEach(([category, services]) => {
-                const categoryDiv = document.createElement('div');
-                categoryDiv.className = 'mobile-category';
-                categoryDiv.innerHTML = `<div class="mobile-category-title">${category}</div>`;
-                
-                services.forEach(serviceId => {
-                    if (serviceData[serviceId]) {
-                        const serviceLink = document.createElement('a');
-                        serviceLink.href = `service.html?service=${serviceId}`;
-                        serviceLink.className = 'mobile-category-item';
-                        serviceLink.textContent = serviceData[serviceId].shortTitle;
-                        categoryDiv.appendChild(serviceLink);
-                    }
+            if (mobileServicesMenu && typeof serviceCategories !== 'undefined') {
+                mobileServicesMenu.innerHTML = ''; // Clear existing content
+                Object.entries(serviceCategories).forEach(([category, services]) => {
+                    const categoryDiv = document.createElement('div');
+                    categoryDiv.className = 'mobile-category';
+                    categoryDiv.innerHTML = `<div class="mobile-category-title">${category}</div>`;
+                    
+                    services.forEach(serviceId => {
+                        if (serviceData[serviceId]) {
+                            const serviceLink = document.createElement('a');
+                            serviceLink.href = `service.html?service=${serviceId}`;
+                            serviceLink.className = 'mobile-category-item';
+                            serviceLink.textContent = serviceData[serviceId].shortTitle;
+                            categoryDiv.appendChild(serviceLink);
+                        }
+                    });
+                    
+                    mobileServicesMenu.appendChild(categoryDiv);
                 });
-                
-                mobileServicesMenu.appendChild(categoryDiv);
-            });
+            }
             
             // Populate footer services
-            const footerInstallation = document.getElementById('footerInstallation');
-            const footerCleaning = document.getElementById('footerCleaning');
-            const footerOther = document.getElementById('footerOther');
-            
-            serviceCategories['Installation & Repair'].forEach(serviceId => {
-                if (serviceData[serviceId]) {
-                    const li = document.createElement('li');
-                    const a = document.createElement('a');
-                    a.href = `service.html?service=${serviceId}`;
-                    a.textContent = serviceData[serviceId].shortTitle;
-                    li.appendChild(a);
-                    footerInstallation.appendChild(li);
-                }
-            });
-            
-            serviceCategories['Cleaning Services'].forEach(serviceId => {
-                if (serviceData[serviceId]) {
-                    const li = document.createElement('li');
-                    const a = document.createElement('a');
-                    a.href = `service.html?service=${serviceId}`;
-                    a.textContent = serviceData[serviceId].shortTitle;
-                    li.appendChild(a);
-                    footerCleaning.appendChild(li);
-                }
-            });
-            
-            // Combine other categories for footer
-            const otherCategories = ['Glass Services', 'Exterior & Groundwork', 'Training'];
-            otherCategories.forEach(category => {
-                if (serviceCategories[category]) {
-                    serviceCategories[category].forEach(serviceId => {
+            if (typeof serviceCategories !== 'undefined') {
+                const footerInstallation = document.getElementById('footerInstallation');
+                const footerCleaning = document.getElementById('footerCleaning');
+                const footerOther = document.getElementById('footerOther');
+                
+                if (footerInstallation) {
+                    footerInstallation.innerHTML = '';
+                    serviceCategories['Installation & Repair'].forEach(serviceId => {
                         if (serviceData[serviceId]) {
                             const li = document.createElement('li');
                             const a = document.createElement('a');
                             a.href = `service.html?service=${serviceId}`;
                             a.textContent = serviceData[serviceId].shortTitle;
                             li.appendChild(a);
-                            footerOther.appendChild(li);
+                            footerInstallation.appendChild(li);
                         }
                     });
                 }
-            });
+                
+                if (footerCleaning) {
+                    footerCleaning.innerHTML = '';
+                    serviceCategories['Cleaning Services'].forEach(serviceId => {
+                        if (serviceData[serviceId]) {
+                            const li = document.createElement('li');
+                            const a = document.createElement('a');
+                            a.href = `service.html?service=${serviceId}`;
+                            a.textContent = serviceData[serviceId].shortTitle;
+                            li.appendChild(a);
+                            footerCleaning.appendChild(li);
+                        }
+                    });
+                }
+                
+                if (footerOther) {
+                    footerOther.innerHTML = '';
+                    const otherCategories = ['Glass Services', 'Exterior & Groundwork', 'Training'];
+                    otherCategories.forEach(category => {
+                        if (serviceCategories[category]) {
+                            serviceCategories[category].forEach(serviceId => {
+                                if (serviceData[serviceId]) {
+                                    const li = document.createElement('li');
+                                    const a = document.createElement('a');
+                                    a.href = `service.html?service=${serviceId}`;
+                                    a.textContent = serviceData[serviceId].shortTitle;
+                                    li.appendChild(a);
+                                    footerOther.appendChild(li);
+                                }
+                            });
+                        }
+                    });
+                }
+            }
         });
     </script>
     <script src="script.js"></script>
+    
+    <style>
+        /* New Service Page Styles */
+        .service-hero-new {
+            height: 500px;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-color: transparent !important;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        /* Override any conflicting styles */
+        section.service-hero-new {
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+        }
+        
+        .service-hero-new .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            z-index: 1;
+        }
+        
+        .service-hero-new .container {
+            position: relative;
+            z-index: 2;
+            text-align: left;
+            color: white;
+            max-width: 800px;
+            padding-left: 200px;
+            padding-right: 0px;
+            margin: 0;
+        }
+        
+        .service-hero-new .breadcrumb {
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .service-hero-new .breadcrumb a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        
+        .service-hero-new .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        .service-hero-new .breadcrumb span {
+            color: #eb0509;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .service-hero-new h1 {
+            font-family: 'League Spartan', sans-serif;
+            color: #ffffff;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+            line-height: 1.1;
+            max-width: 800px;
+        }
+        
+        /* Service Content Section */
+        .service-content-new {
+            padding: 80px 0;
+            background: #ffffff;
+        }
+        
+        .service-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+        
+        .service-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .navbar .nav-menu li a {
+            color: #ffffff !important;
+        }
+        
+        .service-description {
+            margin-bottom: 30px;
+        }
+        
+        .service-description p {
+            margin: 0;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .service-detail-item {
+            margin-bottom: 25px;
+        }
+        
+        .service-detail-item h3 {
+            color: #092c6a;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .service-detail-item p {
+            margin: 0;
+            line-height: 1.7;
+        }
+        
+        .service-images {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .service-image-top,
+        .service-image-bottom {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-image-top img,
+        .service-image-bottom img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        /* Why Choose HBM Section */
+        .why-choose-hbm {
+            padding: 20px 0;
+            background: #f8f9fa;
+        }
+        
+        .why-choose-hbm h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #092c6a;
+            margin-bottom: 60px;
+        }
+        
+        .benefits-grid-new {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .benefit-item-new {
+            text-align: left;
+        }
+        
+        .benefit-item-new h3 {
+            color: #092c6a;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .benefit-item-new p {
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        /* Related Services */
+        .related-services {
+            padding: 80px 0;
+            background: #ffffff;
+        }
+        
+        .related-services h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #092c6a;
+            margin-bottom: 60px;
+        }
+        
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .related-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .related-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .related-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .related-card h3 {
+            color: #092c6a;
+            font-size: 1.3rem;
+            margin: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .related-card p {
+            color: #666;
+            margin: 0 20px 20px;
+            line-height: 1.6;
+        }
+        
+        /* CTA Section */
+        .service-cta-section {
+            padding: 80px 0;
+            background: #092c6a;
+            color: white;
+            text-align: center;
+        }
+        
+        .service-cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .service-cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cta-button {
+            background: #eb0509;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background: #c70408;
+        }
+        
+        .cta-button-outline {
+            background: transparent;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            border: 2px solid white;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button-outline:hover {
+            background: white;
+            color: #092c6a;
+        }
+        
+        /* Auto-scrolling Carousel Styles */
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+        
+        .associations-logos.auto-scroll {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            width: max-content;
+            animation: scroll-left 30s linear infinite;
+        }
+        
+        .associations-logos img {
+            flex-shrink: 0;
+            object-fit: contain;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Pause animation on hover */
+        .associations-logos.auto-scroll:hover {
+            animation-play-state: paused;
+        }
+        
+        /* Seamless scrolling animation */
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .service-hero-new {
+                height: 400px;
+            }
+            
+            .service-hero-new h1 {
+                font-size: 2rem;
+            }
+            
+            .service-layout {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .service-content-new {
+                padding: 60px 0;
+            }
+            
+            .why-choose-hbm {
+                padding: 60px 0;
+            }
+            
+            .why-choose-hbm h2 {
+                font-size: 2rem;
+                margin-bottom: 40px;
+            }
+            
+            .benefits-grid-new {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            /* Mobile auto-scroll adjustments */
+            .associations-logos.auto-scroll {
+                animation-duration: 40s; /* Slower on mobile */
+            }
+            
+            .associations-logos img {
+                width: 100px;
+                height: 65px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .service-hero-new h1 {
+                font-size: 1.5rem;
+            }
+            
+            .service-text {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </body>
 </html>

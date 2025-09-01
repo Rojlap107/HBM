@@ -10,6 +10,85 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* White navbar for services page */
+        
+        
+        .navbar .logo img {
+            filter: none !important;
+        }
+        
+        .navbar .nav-menu li a {
+            color: #333 !important;
+        }
+        
+        .navbar .nav-menu li a:hover {
+            color: #eb0509 !important;
+        }
+        
+        .navbar .nav-menu li a.active {
+            color: #eb0509 !important;
+        }
+        
+        .navbar .dropdown-trigger {
+            color: #ffffff !important;
+        }
+        
+        .navbar .dropdown-trigger:hover {
+            color: #eb0509 !important;
+        }
+        
+        .navbar .dropdown-trigger.active {
+            color: #eb0509 !important;
+        }
+        
+        .navbar .cta-button {
+            background: #eb0509 !important;
+            color: white !important;
+        }
+        
+        .navbar .cta-button:hover {
+            background: #c70408 !important;
+        }
+        
+        .mobile-menu-toggle span {
+            background: #333 !important;
+        }
+        
+        /* Service items with images */
+        .service-item {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+        }
+        
+        .service-item:hover {
+            background: rgba(235, 5, 9, 0.1);
+            transform: translateX(5px);
+        }
+        
+        .service-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+        
+        .service-item span {
+            color: #333;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+        
+        .service-item:hover span {
+            color: #eb0509;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -163,12 +242,30 @@
                 <div class="service-category-box">
                     <h2>Installation & Repair</h2>
                     <div class="service-items">
-                        <a href="service.html?service=window-installation" class="service-item">Window Installation</a>
-                        <a href="service.html?service=isa-button-installation" class="service-item">ISA Button Installation</a>
-                        <a href="service.html?service=painting-drywall" class="service-item">Painting & Drywall Repair</a>
-                        <a href="service.html?service=flooring" class="service-item">Flooring Installation & Repair</a>
-                        <a href="service.html?service=bollard-installation" class="service-item">Bollard Installation</a>
-                        <a href="service.html?service=brickwork-repair" class="service-item">Brickwork Repair</a>
+                        <a href="service.html?service=window-installation" class="service-item">
+                            <img src="images/services/Installation & Repair/Window Installation Services/23.jpg" alt="Window Installation" loading="lazy">
+                            <span>Window Installation</span>
+                        </a>
+                        <a href="service.html?service=isa-button-installation" class="service-item">
+                            <img src="images/services/Installation & Repair/ISA Button Installation and Anchor Testing Services/10.jpg" alt="ISA Button Installation" loading="lazy">
+                            <span>ISA Button Installation</span>
+                        </a>
+                        <a href="service.html?service=painting-drywall" class="service-item">
+                            <img src="images/services/Installation & Repair/Painting and Drywall Repair Services/5.jpg" alt="Painting & Drywall Repair" loading="lazy">
+                            <span>Painting & Drywall Repair</span>
+                        </a>
+                        <a href="service.html?service=flooring" class="service-item">
+                            <img src="images/services/Installation & Repair/Flooring Installation and Repair Services/30.jpg" alt="Flooring Installation & Repair" loading="lazy">
+                            <span>Flooring Installation & Repair</span>
+                        </a>
+                        <a href="service.html?service=bollard-installation" class="service-item">
+                            <img src="images/services/Installation & Repair/Bollard Installation Services/21.jpg" alt="Bollard Installation" loading="lazy">
+                            <span>Bollard Installation</span>
+                        </a>
+                        <a href="service.html?service=brickwork-repair" class="service-item">
+                            <img src="images/services/Installation & Repair/Brickwork Repair Services/24.jpg" alt="Brickwork Repair" loading="lazy">
+                            <span>Brickwork Repair</span>
+                        </a>
                     </div>
                 </div>
 
@@ -176,11 +273,26 @@
                 <div class="service-category-box">
                     <h2>Cleaning Services</h2>
                     <div class="service-items">
-                        <a href="service.html?service=window-cleaning" class="service-item">Window Cleaning</a>
-                        <a href="service.html?service=post-construction-cleaning" class="service-item">Post-Construction Cleaning</a>
-                        <a href="service.html?service=roof-ceiling-cleaning" class="service-item">Roof & Ceiling Cleaning</a>
-                        <a href="service.html?service=solar-panel-cleaning" class="service-item">Solar Panel Cleaning</a>
-                        <a href="service.html?service=pressure-washing" class="service-item">Pressure Power Washing</a>
+                        <a href="service.html?service=window-cleaning" class="service-item">
+                            <img src="images/services/Cleaning Services/High Rise and Low-Rise Window Cleaning Services/27.jpg" alt="Window Cleaning" loading="lazy">
+                            <span>Window Cleaning</span>
+                        </a>
+                        <a href="service.html?service=post-construction-cleaning" class="service-item">
+                            <img src="images/services/Cleaning Services/Post-Construction Cleaning Services/11.jpg" alt="Post-Construction Cleaning" loading="lazy">
+                            <span>Post-Construction Cleaning</span>
+                        </a>
+                        <a href="service.html?service=roof-ceiling-cleaning" class="service-item">
+                            <img src="images/services/Cleaning Services/Interior Roof and Ceiling Cleaning Services/20.jpg" alt="Roof & Ceiling Cleaning" loading="lazy">
+                            <span>Roof & Ceiling Cleaning</span>
+                        </a>
+                        <a href="service.html?service=solar-panel-cleaning" class="service-item">
+                            <img src="images/services/Cleaning Services/Solar Panel Cleaning Services/15.jpg" alt="Solar Panel Cleaning" loading="lazy">
+                            <span>Solar Panel Cleaning</span>
+                        </a>
+                        <a href="service.html?service=pressure-washing" class="service-item">
+                            <img src="images/services/Cleaning Services/Pressure Power Washing Services/2.jpg" alt="Pressure Power Washing" loading="lazy">
+                            <span>Pressure Power Washing</span>
+                        </a>
                     </div>
                 </div>
 
@@ -188,8 +300,14 @@
                 <div class="service-category-box">
                     <h2>Glass Services</h2>
                     <div class="service-items">
-                        <a href="service.html?service=glass-scratch-repair" class="service-item">Glass Scratch Repair</a>
-                        <a href="service.html?service=caulking-glazing" class="service-item">Caulking & Glazing</a>
+                        <a href="service.html?service=glass-scratch-repair" class="service-item">
+                            <img src="images/services/Glass Services/Glass Scratch Repair Service/1.jpg" alt="Glass Scratch Repair" loading="lazy">
+                            <span>Glass Scratch Repair</span>
+                        </a>
+                        <a href="service.html?service=caulking-glazing" class="service-item">
+                            <img src="images/services/Glass Services/Caulking and Glazing Services/10.jpg" alt="Caulking & Glazing" loading="lazy">
+                            <span>Caulking & Glazing</span>
+                        </a>
                     </div>
                 </div>
 
@@ -197,10 +315,22 @@
                 <div class="service-category-box">
                     <h2>Exterior & Groundwork</h2>
                     <div class="service-items">
-                        <a href="service.html?service=interlocking" class="service-item">Interlocking Services</a>
-                        <a href="service.html?service=parking-line-striping" class="service-item">Parking Line Striping</a>
-                        <a href="service.html?service=hoisting" class="service-item">Hoisting Services</a>
-                        <a href="service.html?service=concrete-testing" class="service-item">Concrete Testing</a>
+                        <a href="service.html?service=interlocking" class="service-item">
+                            <img src="images/services/Exterior & Groundwork/Interlocking Services/38.jpg" alt="Interlocking Services" loading="lazy">
+                            <span>Interlocking Services</span>
+                        </a>
+                        <a href="service.html?service=parking-line-striping" class="service-item">
+                            <img src="images/services/Exterior & Groundwork/Parking Line Striping Services/27.jpg" alt="Parking Line Striping" loading="lazy">
+                            <span>Parking Line Striping</span>
+                        </a>
+                        <a href="service.html?service=hoisting" class="service-item">
+                            <img src="images/services/Exterior & Groundwork/Hoisting Services/20.jpg" alt="Hoisting Services" loading="lazy">
+                            <span>Hoisting Services</span>
+                        </a>
+                        <a href="service.html?service=concrete-testing" class="service-item">
+                            <img src="images/services/Exterior & Groundwork/Concrete Testing Service/36.jpg" alt="Concrete Testing" loading="lazy">
+                            <span>Concrete Testing</span>
+                        </a>
                     </div>
                 </div>
 
@@ -208,7 +338,10 @@
                 <div class="service-category-box">
                     <h2>Training</h2>
                     <div class="service-items">
-                        <a href="service.html?service=rope-access-training" class="service-item">Rope Access Training</a>
+                        <a href="service.html?service=rope-access-training" class="service-item">
+                            <img src="images/services/Training/Rope Access Training Services/16.jpg" alt="Rope Access Training" loading="lazy">
+                            <span>Rope Access Training</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -227,18 +360,60 @@
         </div>
     </section>
 
+    <!-- Clients Section -->
+    <section class="associations">
+        <div class="container">
+            <h2>Clients Who Trust Us</h2>
+            <div class="carousel-container">
+                <div class="associations-logos auto-scroll" id="clientsCarousel">
+                    <img src="images/Clients/ICC PROPERTY MANAGEMENEYT.png" alt="ICC Property Management" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/TORONTO.png" alt="Toronto" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/TRACTEL.png" alt="Tractel" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/birdconstruction.jpg" alt="Bird Construction" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/del property.jpeg" alt="Del Property" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/forest hill kipling .jpg" alt="Forest Hill Kipling" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/mattamy HOMES.jpeg" alt="Mattamy Homes" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/sky grid.png" alt="Sky Grid" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/york region .png" alt="York Region" loading="lazy" width="120" height="80">
+                    <!-- Duplicate for seamless loop -->
+                    <img src="images/Clients/ICC PROPERTY MANAGEMENEYT.png" alt="ICC Property Management" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/TORONTO.png" alt="Toronto" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/TRACTEL.png" alt="Tractel" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/birdconstruction.jpg" alt="Bird Construction" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/del property.jpeg" alt="Del Property" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/forest hill kipling .jpg" alt="Forest Hill Kipling" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/mattamy HOMES.jpeg" alt="Mattamy Homes" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/sky grid.png" alt="Sky Grid" loading="lazy" width="120" height="80">
+                    <img src="images/Clients/york region .png" alt="York Region" loading="lazy" width="120" height="80">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Associations Section -->
     <section class="associations">
         <div class="container">
             <h2>Member of Reputable Canadian Associations</h2>
-            <div class="associations-logos">
-                <img src="images/associations-logos/acmo 2000.png" alt="ACMO 2000">
-                <img src="images/associations-logos/construct connect .png" alt="Construct Connect">
-                <img src="images/associations-logos/first service.png" alt="First Service">
-                <img src="images/associations-logos/homestars.png" alt="HomeStars">
-                <img src="images/associations-logos/merx logo.png" alt="Merx">
-                <img src="images/associations-logos/vendorpm.png" alt="VendorPM">
-                <img src="images/associations-logos/wsib.png" alt="WSIB">
+            <div class="carousel-container">
+                <div class="associations-logos auto-scroll" id="associationsCarousel">
+                    <img src="images/associations-logos/acmo.jpg" alt="ACMO" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/construct connect .png" alt="Construct Connect" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/firstservice residential.jpg" alt="FirstService Residential" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/HomeStars.jpg" alt="HomeStars" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/merx.jpg" alt="Merx" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/vendorpm.png" alt="VendorPM" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/vive.jpeg" alt="Vive" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/wsib.webp" alt="WSIB" loading="lazy" width="120" height="80">
+                    <!-- Duplicate for seamless loop -->
+                    <img src="images/associations-logos/acmo.jpg" alt="ACMO" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/construct connect .png" alt="Construct Connect" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/firstservice residential.jpg" alt="FirstService Residential" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/HomeStars.jpg" alt="HomeStars" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/merx.jpg" alt="Merx" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/vendorpm.png" alt="VendorPM" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/vive.jpeg" alt="Vive" loading="lazy" width="120" height="80">
+                    <img src="images/associations-logos/wsib.webp" alt="WSIB" loading="lazy" width="120" height="80">
+                </div>
             </div>
         </div>
     </section>
@@ -308,5 +483,61 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    <style>
+        /* Auto-scrolling Carousel Styles */
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+        
+        .associations-logos.auto-scroll {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            width: max-content;
+            animation: scroll-left 30s linear infinite;
+        }
+        
+        .associations-logos img {
+            flex-shrink: 0;
+            object-fit: contain;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Pause animation on hover */
+        .associations-logos.auto-scroll:hover {
+            animation-play-state: paused;
+        }
+        
+        /* Seamless scrolling animation */
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            /* Mobile auto-scroll adjustments */
+            .associations-logos.auto-scroll {
+                animation-duration: 20s; /* Faster on mobile */
+            }
+            
+            .associations-logos img {
+                width: 100px;
+                height: 65px;
+            }
+        }
+    </style>
 </body>
 </html>
