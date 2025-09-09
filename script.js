@@ -674,6 +674,91 @@ function initLogoScrolling() {
     });
 }
 
+// Testimonials Slider
+function initTestimonialsSlider() {
+    const slider = document.getElementById('testimonialsSlider');
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    
+    if (!slider || slides.length === 0) return;
+    
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+    
+    // Auto-advance every 5 seconds
+    let slideInterval = setInterval(nextSlide, 5000);
+    
+    function showSlide(index) {
+        // Remove active class from all slides and dots
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        // Add active class to current slide and dot
+        if (slides[index]) slides[index].classList.add('active');
+        if (dots[index]) dots[index].classList.add('active');
+    }
+    
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+    }
+    
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(currentSlide);
+    }
+    
+    function goToSlide(index) {
+        currentSlide = index;
+        showSlide(currentSlide);
+    }
+    
+    // Event listeners for navigation buttons
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            // Reset interval when user manually navigates
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 5000);
+        });
+    }
+    
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            // Reset interval when user manually navigates
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 5000);
+        });
+    }
+    
+    // Event listeners for dots
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            goToSlide(index);
+            // Reset interval when user manually navigates
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 5000);
+        });
+    });
+    
+    // Pause auto-advance on hover
+    if (slider) {
+        slider.addEventListener('mouseenter', () => {
+            clearInterval(slideInterval);
+        });
+        
+        slider.addEventListener('mouseleave', () => {
+            slideInterval = setInterval(nextSlide, 5000);
+        });
+    }
+    
+    // Initialize first slide
+    showSlide(0);
+}
+
 // Main initialization function
 document.addEventListener('DOMContentLoaded', function() {
     initMobileMenu();
@@ -688,4 +773,5 @@ document.addEventListener('DOMContentLoaded', function() {
     initTypingEffect();
     initAreasCycling();
     initLogoScrolling();
+    initTestimonialsSlider();
 });

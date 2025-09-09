@@ -637,7 +637,47 @@ const serviceData = {
         ],
         ctaTitle: 'Need hoisting services?',
         ctaDescription: 'Contact HBM for professional hoisting services that safely transport materials for your project.',
-        relatedServices: ['concrete-testing', 'isa-button-installation', 'bollard-installation']
+        relatedServices: ['anchor-testing', 'isa-button-installation', 'bollard-installation']
+    },
+
+    'anchor-testing': {
+        id: 'anchor-testing',
+        title: 'Anchor Testing Services',
+        category: 'Safety & Testing Services',
+        shortTitle: 'Anchor Testing',
+        description: 'Professional anchor testing and certification for building safety compliance',
+        heroVideo: 'images/services/Safety & Testing Services/Anchor Testing/video.mp4',
+        heroImage: 'images/services/Safety & Testing Services/Anchor Testing/1.jpg',
+        imageTop: 'images/services/Safety & Testing Services/Anchor Testing/1.jpg',
+        imageBottom: 'images/services/Safety & Testing Services/Anchor Testing/2.jpg',
+        fullDescription: 'At HBM, we provide comprehensive anchor testing and certification services that ensure your building\'s anchor points meet the highest safety standards for rope access work, fall protection systems, and maintenance operations. Whether you\'re managing a commercial high-rise, industrial facility, or residential complex, our certified testing technicians use advanced equipment and proven methodologies to verify anchor point strength, load capacity, and compliance with safety regulations, providing you with the documentation and confidence you need for safe building operations.',
+        services: [
+            {
+                title: 'Load Testing',
+                description: 'Professional load testing of anchor points to verify their capacity and safety for rope access work.'
+            },
+            {
+                title: 'Safety Certification',
+                description: 'Comprehensive safety certification and documentation for building anchor systems and fall protection equipment.'
+            }
+        ],
+        benefits: [
+            {
+                title: 'Safety Compliance',
+                description: 'Ensure your anchor points meet safety regulations and building codes for worker protection.'
+            },
+            {
+                title: 'Professional Testing',
+                description: 'Certified technicians provide thorough testing and detailed documentation of anchor point performance.'
+            },
+            {
+                title: 'Risk Mitigation',
+                description: 'Regular testing identifies potential issues before they become safety hazards.'
+            }
+        ],
+        ctaTitle: 'Need anchor testing services?',
+        ctaDescription: 'Contact HBM for professional anchor testing that ensures safety compliance and worker protection.',
+        relatedServices: ['thermal-scanning', 'isa-button-installation', 'rope-access-training']
     },
 
     'concrete-testing': {
@@ -677,7 +717,47 @@ const serviceData = {
         ],
         ctaTitle: 'Need concrete testing?',
         ctaDescription: 'Contact HBM for professional concrete testing services that ensure quality and compliance.',
-        relatedServices: ['hoisting', 'bollard-installation', 'interlocking']
+        relatedServices: ['thermal-scanning', 'anchor-testing', 'bollard-installation']
+    },
+
+    'thermal-scanning': {
+        id: 'thermal-scanning',
+        title: 'Thermal Scanning Services',
+        category: 'Safety & Testing Services',
+        shortTitle: 'Thermal Scanning',
+        description: 'Professional thermal imaging and scanning services for building diagnostics',
+        heroVideo: 'images/services/Safety & Testing Services/Thermal Scanning Services/video.mp4',
+        heroImage: 'images/services/Safety & Testing Services/Thermal Scanning Services/1.jpg',
+        imageTop: 'images/services/Safety & Testing Services/Thermal Scanning Services/1.jpg',
+        imageBottom: 'images/services/Safety & Testing Services/Thermal Scanning Services/2.jpg',
+        fullDescription: 'At HBM, we provide advanced thermal scanning and imaging services that utilize state-of-the-art infrared technology to detect and analyze temperature variations in building systems, electrical components, and structural elements. Whether you\'re conducting preventive maintenance, investigating energy efficiency issues, or performing safety inspections, our certified thermographers deliver comprehensive thermal analysis that helps you identify problems before they become costly repairs, ensuring optimal performance and safety of your property systems.',
+        services: [
+            {
+                title: 'Building Thermal Analysis',
+                description: 'Comprehensive thermal imaging of building envelopes, HVAC systems, and insulation to identify energy loss and efficiency issues.'
+            },
+            {
+                title: 'Electrical System Scanning',
+                description: 'Professional thermal scanning of electrical panels, connections, and equipment to detect overheating and potential fire hazards.'
+            }
+        ],
+        benefits: [
+            {
+                title: 'Early Problem Detection',
+                description: 'Thermal scanning identifies issues before they become visible or cause system failures.'
+            },
+            {
+                title: 'Energy Efficiency',
+                description: 'Identify thermal bridges, insulation gaps, and air leaks that impact energy performance.'
+            },
+            {
+                title: 'Safety Assessment',
+                description: 'Detect overheating electrical components and potential fire hazards before they pose risks.'
+            }
+        ],
+        ctaTitle: 'Need thermal scanning services?',
+        ctaDescription: 'Contact HBM for professional thermal imaging services that reveal hidden issues and improve building performance.',
+        relatedServices: ['concrete-testing', 'anchor-testing', 'window-cleaning']
     },
 
     // Training
@@ -745,7 +825,9 @@ const serviceCategories = {
         'interlocking'
     ],
     'Safety & Testing Services': [
+        'anchor-testing',
         'concrete-testing',
+        'thermal-scanning',
         'hoisting',
         'parking-line-striping',
         'rope-access-training'

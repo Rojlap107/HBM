@@ -654,31 +654,116 @@ h3 {
     color: white;
 }
 
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
+.testimonials-slider-wrapper {
+    position: relative;
+    max-width: 600px;
+    margin: 50px auto 0;
+}
+
+.testimonials-slider {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.testimonial-slide {
+    display: none;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.5s ease-in-out;
+}
+
+.testimonial-slide.active {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .testimonial {
     background: rgba(255, 255, 255, 0.1);
-    padding: 30px;
+    padding: 40px;
     border-radius: 15px;
     text-align: center;
     backdrop-filter: blur(10px);
+    margin: 0;
 }
 
 .testimonial p {
     font-style: italic;
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: white;
 }
 
 .testimonial span {
     font-weight: 600;
     color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.slider-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.slider-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    pointer-events: all;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.prev-btn {
+    margin-left: -25px;
+}
+
+.next-btn {
+    margin-right: -25px;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.2);
+}
+
+.dot:hover {
+    background: rgba(255, 255, 255, 0.6);
 }
 
 /* Associations Section */
@@ -1102,8 +1187,42 @@ h3 {
         width: 280px;
     }
     
-    .testimonials-grid {
-        grid-template-columns: 1fr;
+    .testimonials-slider-wrapper {
+        max-width: 100%;
+        margin: 30px auto 0;
+        padding: 0 10px;
+    }
+    
+    .testimonial {
+        padding: 30px 20px;
+    }
+    
+    .testimonial p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .testimonial span {
+        font-size: 1rem;
+    }
+    
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+    
+    .prev-btn {
+        margin-left: -20px;
+    }
+    
+    .next-btn {
+        margin-right: -20px;
+    }
+    
+    .dot {
+        width: 10px;
+        height: 10px;
     }
     
     .footer-content {
@@ -1132,6 +1251,47 @@ h3 {
     
     .service-text {
         padding: 25px;
+    }
+    
+    .testimonials-slider-wrapper {
+        padding: 0 5px;
+        margin: 20px auto 0;
+    }
+    
+    .testimonial {
+        padding: 25px 15px;
+    }
+    
+    .testimonial p {
+        font-size: 0.9rem;
+    }
+    
+    .testimonial span {
+        font-size: 0.9rem;
+    }
+    
+    .slider-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1.3rem;
+    }
+    
+    .prev-btn {
+        margin-left: -17px;
+    }
+    
+    .next-btn {
+        margin-right: -17px;
+    }
+    
+    .slider-dots {
+        margin-top: 20px;
+        gap: 8px;
+    }
+    
+    .dot {
+        width: 8px;
+        height: 8px;
     }
 }
 

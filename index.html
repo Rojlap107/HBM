@@ -17,7 +17,7 @@
         "@type": "LocalBusiness",
         "name": "HBM Building Maintenance",
         "url": "https://himbm.com",
-        "email": "thupten@himbm.com",
+        "email": "isha@himbm.com",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "2307 Lake Shore Blvd W B3",
@@ -87,9 +87,10 @@
                             <div class="dropdown-category">
                                 <h4>Safety & Testing Services</h4>
                                 <div class="category-services">
-                                    <a href="service.html?service=concrete-testing">Anchor Testing</a>
-                                    <a href="service.html?service=hoisting">Hoisting Services</a>
+                                    <a href="service.html?service=anchor-testing">Anchor Testing</a>
                                     <a href="service.html?service=concrete-testing">Concrete Testing</a>
+                                    <a href="service.html?service=thermal-scanning">Thermal Scanning</a>
+                                    <a href="service.html?service=hoisting">Hoisting Services</a>
                                     <a href="service.html?service=parking-line-striping">Parking Striping</a>
                                     <a href="service.html?service=rope-access-training">Rope Access Training</a>
                                 </div>
@@ -150,9 +151,10 @@
                     </div>
                     <div class="mobile-category">
                         <div class="mobile-category-title">Safety & Testing Services</div>
-                        <a href="service.html?service=concrete-testing" class="mobile-category-item">Anchor Testing</a>
-                        <a href="service.html?service=hoisting" class="mobile-category-item">Hoisting Services</a>
+                        <a href="service.html?service=anchor-testing" class="mobile-category-item">Anchor Testing</a>
                         <a href="service.html?service=concrete-testing" class="mobile-category-item">Concrete Testing</a>
+                        <a href="service.html?service=thermal-scanning" class="mobile-category-item">Thermal Scanning</a>
+                        <a href="service.html?service=hoisting" class="mobile-category-item">Hoisting Services</a>
                         <a href="service.html?service=parking-line-striping" class="mobile-category-item">Parking Striping</a>
                         <a href="service.html?service=rope-access-training" class="mobile-category-item">Rope Access Training</a>
                     </div>
@@ -264,9 +266,10 @@
                         <h3>Safety & Testing Services</h3>
                         <div class="service-list">
                             <ul>
-                                <li><a href="service.html?service=concrete-testing">Anchor Testing</a></li>
-                                <li><a href="service.html?service=hoisting">Hoisting Services</a></li>
+                                <li><a href="service.html?service=anchor-testing">Anchor Testing</a></li>
                                 <li><a href="service.html?service=concrete-testing">Concrete Testing</a></li>
+                                <li><a href="service.html?service=thermal-scanning">Thermal Scanning</a></li>
+                                <li><a href="service.html?service=hoisting">Hoisting Services</a></li>
                                 <li><a href="service.html?service=parking-line-striping">Parking Line Striping</a></li>
                                 <li><a href="service.html?service=rope-access-training">Rope Access Training</a></li>
                             </ul>
@@ -420,22 +423,70 @@
     <section class="testimonials">
         <div class="container">
             <h2>What Our Clients Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial">
-                    <p>"Excellent service and timely delivery! HBM exceeded our expectations."</p>
-                    <span>— Sarah M.</span>
+            <div class="testimonials-slider-wrapper">
+                <div class="testimonials-slider" id="testimonialsSlider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial">
+                            <p>"Excellent service and timely delivery! HBM exceeded our expectations."</p>
+                            <span>— Sarah M.</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial">
+                            <p>"Truly professional team. Their attention to detail is impressive."</p>
+                            <span>— James K.</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial">
+                            <p>"Reliable and efficient. We trust HBM for all our maintenance needs."</p>
+                            <span>— Maria L.</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial">
+                            <p>"Quality work at competitive prices. Highly recommended!"</p>
+                            <span>— David R.</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial">
+                            <p>"Outstanding window cleaning services! Our building looks pristine. The team was professional and thorough."</p>
+                            <span>— Jennifer T.</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial">
+                            <p>"HBM's maintenance team is reliable and skilled. They've been taking care of our property for years with excellent results."</p>
+                            <span>— Robert P.</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial">
+                            <p>"Impressed with their concrete testing services. Very detailed reports and professional conduct throughout the project."</p>
+                            <span>— Angela C.</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial">
+                            <p>"Fast response time and excellent customer service. HBM has become our go-to for all building maintenance needs."</p>
+                            <span>— Michael H.</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial">
-                    <p>"Truly professional team. Their attention to detail is impressive."</p>
-                    <span>— James K.</span>
+                <div class="slider-navigation">
+                    <button class="slider-btn prev-btn" id="prevBtn">‹</button>
+                    <button class="slider-btn next-btn" id="nextBtn">›</button>
                 </div>
-                <div class="testimonial">
-                    <p>"Reliable and efficient. We trust HBM for all our maintenance needs."</p>
-                    <span>— Maria L.</span>
-                </div>
-                <div class="testimonial">
-                    <p>"Quality work at competitive prices. Highly recommended!"</p>
-                    <span>— David R.</span>
+                <div class="slider-dots" id="sliderDots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="4"></span>
+                    <span class="dot" data-slide="5"></span>
+                    <span class="dot" data-slide="6"></span>
+                    <span class="dot" data-slide="7"></span>
                 </div>
             </div>
         </div>
