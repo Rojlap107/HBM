@@ -7,39 +7,81 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://himbm.com/about.html</loc>
+        <loc>https://himbm.com/about</loc>
         <lastmod>2025-09-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://himbm.com/services.html</loc>
+        <loc>https://himbm.com/services</loc>
         <lastmod>2025-09-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://himbm.com/service.html</loc>
+        <loc>https://himbm.com/projects</loc>
         <lastmod>2025-09-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://himbm.com/projects.html</loc>
-        <lastmod>2025-09-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://himbm.com/contact.html</loc>
+        <loc>https://himbm.com/contact</loc>
         <lastmod>2025-09-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://himbm.com/thank-you.html</loc>
+        <loc>https://himbm.com/thank-you</loc>
         <lastmod>2025-09-25</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://himbm.com/service/window-cleaning</loc>
+        <lastmod>2025-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://himbm.com/service/post-construction-cleaning</loc>
+        <lastmod>2025-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://himbm.com/service/window-installation</loc>
+        <lastmod>2025-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://himbm.com/service/painting-drywall</loc>
+        <lastmod>2025-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://himbm.com/service/glass-scratch-repair</loc>
+        <lastmod>2025-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://himbm.com/service/caulking-glazing</loc>
+        <lastmod>2025-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://himbm.com/service/concrete-testing</loc>
+        <lastmod>2025-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://himbm.com/service/anchor-testing</loc>
+        <lastmod>2025-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
     </url>
 </urlset>
