@@ -1,0 +1,13 @@
+# Jekyll configuration for GitHub Pages
+plugins:
+  - jekyll-redirect-from
+
+# Clean URLs
+permalink: pretty
+
+# GitHub Pages settings
+github: [metadata]
+
+# Include service directory in build
+include:
+  - service
