@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // Get the service name from URL path
+        const path = window.location.pathname;
+        const serviceName = path.split('/').pop();
+
+        // If it's just /service/, redirect to services page
+        if (serviceName === 'service' || serviceName === '') {
+            window.location.replace('../services.html');
+        } else {
+            // Redirect to service.html with query parameter
+            window.location.replace('../service.html?service=' + serviceName);
+        }
+    </script>
+</head>
+<body>
+    Redirecting...
+</body>
+</html>
